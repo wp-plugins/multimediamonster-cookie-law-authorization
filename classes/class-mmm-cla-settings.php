@@ -594,6 +594,10 @@ class mmm_cla_settings
             	<?php
 				if ($label)
 				{
+					if ($type == 'help')
+					{
+						$label = '<h3>'.$label.'</h3>';
+					}
 					?>
              		<label for="<?php echo $fieldset_label_for; ?>"><?php echo $label; ?><?php echo self::return_required($required); ?></label>
                 	<?php
@@ -695,7 +699,7 @@ class mmm_cla_settings
 							<div class="input <?php echo $type; ?> <?php echo $type.$values_key; ?> duplicate">
 								<b>
 									<?php echo $type.' '.$values_key; ?>
-                                    <a href="javascript:void(0);" class="slide <?php echo $type.$values_key; ?>"><?php _e('slide', MMM_PLUGIN_TRANSLATE); ?></a> 
+                                    <a href="javascript:void(0);" class="slide <?php echo $type.$values_key; ?>"><?php _e('slide down', MMM_PLUGIN_TRANSLATE); ?></a> 
                                     <?php
 									if ($values_key > 3)
 									{

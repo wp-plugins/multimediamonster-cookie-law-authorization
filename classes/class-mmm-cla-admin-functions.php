@@ -71,13 +71,21 @@ class mmm_cla_admin_functions
 		static function translated_texts ($return = '')
 		{			
 			$to_return								= '';
+			
+			$texts['ipaddress'] 					= __('ipaddress', MMM_PLUGIN_TRANSLATE);
+			$texts['date_time'] 					= __('date_time', MMM_PLUGIN_TRANSLATE);
+			$texts['level'] 						= __('level', MMM_PLUGIN_TRANSLATE);
+			
 			$texts['plugin_id_short'] 				= MMM_PLUGIN_ID_SHORT;
 			$texts['plugin_id_short_minus'] 		= MMM_PLUGIN_ID_SHORT_MINUS;
 			$texts['plugin_id_long'] 				= MMM_PLUGIN_ID_LONG;
 			$texts['plugin_id_long_minus'] 			= MMM_PLUGIN_ID_LONG_MINUS;
+			$texts['plugin_url'] 					= MMM_PLUGIN_URL;
 			$texts['confirm_delete_authorized'] 	= __('Really delete this IP address? (Irreversible)', MMM_PLUGIN_TRANSLATE);
 			$texts['confirm_reset'] 				= __('Are you sure you want to reset? The widget will be disabled and all configuration and layout settings will be permanently deleted. (Irreversible)', MMM_PLUGIN_TRANSLATE);
 			$texts['max_level_elements'] 			= __('You have reached the maximum number of levels to add.', MMM_PLUGIN_TRANSLATE);
+			$texts['slide_up'] 						= __('slide up', MMM_PLUGIN_TRANSLATE);
+			$texts['slide_down']					= __('slide down', MMM_PLUGIN_TRANSLATE);
 			$texts['remove'] 						= __('remove', MMM_PLUGIN_TRANSLATE);
 			if (!$return)
 			{
