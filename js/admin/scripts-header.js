@@ -10,48 +10,80 @@
 		// functions
 		jQuery( document ).ready(function()
 		{
-			// google maps
-			function createMarker(content, map, latlng) 
+			// Google maps with ip adresses
+			var markers 									= 	[];
+			var infowindows 								= 	[];
+			
+			function clearOverlays()
+			{   
+				for (var i = 0; i < markers.length; i++)
+				{
+					markers[i].setMap(null);
+				}
+			}
+			function createMarkers(action) 
 			{
-				var image 									= 	"images";
-				var infowindow 								= 	new google.maps.InfoWindow();
-				var marker 									= 	new google.maps.Marker(
+				clearOverlays();
+				jQuery('.map-canvas-main-info').each(function(index, element) 
+				{
+					var lat									= 	jQuery(this).children('input[name="lat"]').val();
+					var lng									= 	jQuery(this).children('input[name="lng"]').val();
+					var content								= 	jQuery(this).children('.info-window').html();
+					
+					var image 								= 	translated_for_js.plugin_url+"/images/admin/googlemaps-icon.png";
+					var infowindow 							= 	new google.maps.InfoWindow();
+					var latlng 								= 	new google.maps.LatLng(lat, lng);
+					var marker 								= 	new google.maps.Marker(
 																{
-																	//icon		: image, 
+																	icon		: image, 
 																	position	: latlng,
+																	center		: latlng,
 																	map			: map,
 																	zIndex		: Math.round(latlng.lat()*-100000)<<5
 																});
-				google.maps.event.addListener(marker, 'click', function()
-				{
-					infowindow.setContent(content);
-					infowindow.open(map,marker);
+					markers.push(marker);
+					infowindows.push(infowindow);
+					
+					google.maps.event.addListener(marker, 'click', function()
+					{
+						infowindow.setContent(content);
+						infowindow.open(map,marker);
+					});
+					if (action != 'load' && jQuery(this).attr('id').replace(jQuery(this).attr('class'), '') == action.replace('marker', ''))
+					{
+						infowindow.setContent(content);
+						infowindow.open(map,marker);
+						map.setCenter(latlng);
+						map.setZoom(6);
+					}
 				});
 			}
-			function google_maps_init()
+			function googlemaps_initialize()
 			{
-				jQuery(".map-canvas").each(function(index, element) 
+				var map_id										=	'map-canvas-main';
+				if (jQuery('#'+map_id).attr('class'))
 				{
-					var map;
 					var geocoder;
 					var position;
-					var map_id			=	jQuery(this).attr('id');
-				  	var lat				= 	jQuery(this).children('input[name="lat"]').val();
-				  	var lng				= 	jQuery(this).children('input[name="lng"]').val();
-				  	var content			= 	jQuery(this).children('.info-window').html();
 					
-					var latlng 			= 	new google.maps.LatLng(lat, lng);
-					var mapOptions 		= 	{
-												zoom: 			8,
-												center: 		latlng,
-												mapTypeId: 		google.maps.MapTypeId.ROADMAP
-											};
-					map 				= 	new google.maps.Map(document.getElementById(map_id), mapOptions);
-					createMarker(content, map, latlng);
-				});
+					var lat										= 	0;
+					var lng										= 	0;
+					var latlng 									= 	new google.maps.LatLng(lat, lng);				
+					var mapOptions 								= 	{
+																		zoom: 			2,
+																		center: 		latlng,
+																		mapTypeId: 		google.maps.MapTypeId.ROADMAP
+																	};
+					map 										= 	new google.maps.Map(document.getElementById(map_id), mapOptions);
+					createMarkers('load');
+				}
 			}
-			google_maps_init();
-			
+			googlemaps_initialize();
+			jQuery("body").delegate(".showmarker","click",function(e)
+			{
+				createMarkers(jQuery(this).attr('id'));
+			});
+
 			// admin colorpicker
 			function create_colorpicker()
 			{
@@ -108,10 +140,12 @@
 				if (slide_display == 'none')
 				{
 					jQuery("."+new_selected_slide_class).stop(true,true).slideDown('slow');
+					jQuery(this).text(translated_for_js.slide_up);
 				}
 				else
 				{
 					jQuery("."+new_selected_slide_class).stop(true,false).slideUp('slow');
+					jQuery(this).text(translated_for_js.slide_down);
 				}
 			});
 			// ajax delete actions
@@ -304,7 +338,7 @@
 																	quicktags(settings);
 																	QTags._buttonsInit();
 																	
-																	var the_prev_init 					= tinyMCEPreInit['mceInit'][get_tinymce_info_from];
+																	var the_prev_init 					= 	tinyMCEPreInit['mceInit'][get_tinymce_info_from];
 																	tinymce.init({
 																		selector						: 	the_textarea_id,
 																		theme							:	find_in_object(the_prev_init, 'theme'),
