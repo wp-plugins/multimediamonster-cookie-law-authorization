@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: MultiMediaMonster Cookie law authorization v1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-11-28 14:31:29+0000\n"
+"PO-Revision-Date: 2014-12-07 10:04:19+0000\n"
 "Last-Translator: renskekip <renske@multimediamonster.nl>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -31,68 +31,67 @@ msgstr "Selecteer aub één of meerder IP adressen."
 msgid "You are not authorized to perform this action."
 msgstr "Je hebt geen rechten om deze handeling uit te voeren."
 
-#: classes/class-mmm-cla-admin-functions.php:100
+#: classes/class-mmm-cla-admin-functions.php:108
 #@ mmm-cla-translated
 msgid "January"
 msgstr "januari"
 
-#: classes/class-mmm-cla-admin-functions.php:101
+#: classes/class-mmm-cla-admin-functions.php:109
 #@ mmm-cla-translated
 msgid "Februari"
 msgstr "februari"
 
-#: classes/class-mmm-cla-admin-functions.php:102
+#: classes/class-mmm-cla-admin-functions.php:110
 #@ mmm-cla-translated
 msgid "March"
 msgstr "maart"
 
-#: classes/class-mmm-cla-admin-functions.php:103
+#: classes/class-mmm-cla-admin-functions.php:111
 #@ mmm-cla-translated
 msgid "April"
 msgstr "april"
 
-#: classes/class-mmm-cla-admin-functions.php:104
+#: classes/class-mmm-cla-admin-functions.php:112
 #@ mmm-cla-translated
 msgid "May"
 msgstr "mei"
 
-#: classes/class-mmm-cla-admin-functions.php:105
+#: classes/class-mmm-cla-admin-functions.php:113
 #@ mmm-cla-translated
 msgid "June"
 msgstr "juni"
 
-#: classes/class-mmm-cla-admin-functions.php:106
+#: classes/class-mmm-cla-admin-functions.php:114
 #@ mmm-cla-translated
 msgid "July"
 msgstr "juli"
 
-#: classes/class-mmm-cla-admin-functions.php:107
+#: classes/class-mmm-cla-admin-functions.php:115
 #@ mmm-cla-translated
 msgid "August"
 msgstr "augustus"
 
-#: classes/class-mmm-cla-admin-functions.php:108
+#: classes/class-mmm-cla-admin-functions.php:116
 #@ mmm-cla-translated
 msgid "September"
 msgstr "september"
 
-#: classes/class-mmm-cla-admin-functions.php:109
+#: classes/class-mmm-cla-admin-functions.php:117
 #@ mmm-cla-translated
 msgid "October"
 msgstr "oktober"
 
-#: classes/class-mmm-cla-admin-functions.php:110
+#: classes/class-mmm-cla-admin-functions.php:118
 #@ mmm-cla-translated
 msgid "November"
 msgstr "november"
 
-#: classes/class-mmm-cla-admin-functions.php:111
+#: classes/class-mmm-cla-admin-functions.php:119
 #@ mmm-cla-translated
 msgid "December"
 msgstr "december"
 
 #: classes/class-mmm-cla-admin-menu-items.php:35
-#: classes/class-mmm-cla-admin-pages.php:15
 #: classes/class-mmm-cla-settings.php:13
 #@ mmm-cla-translated
 msgid "Settings"
@@ -119,7 +118,7 @@ msgstr "Wat leuk dat je mijn plugin bent gaan gebruiken! Ik heb geen voorwaarden
 msgid "The IP-addresses are succesfully deleted."
 msgstr "Het IP-adres is succesvol verwijderd."
 
-#: classes/class-mmm-cla-admin-functions.php:78
+#: classes/class-mmm-cla-admin-functions.php:84
 #@ mmm-cla-translated
 msgid "Really delete this IP address? (Irreversible)"
 msgstr "Weet je zeker dat je dit IP-adres wilt verwijderen? (onomkeerbaar)"
@@ -134,12 +133,12 @@ msgstr "AAN"
 msgid "OFF"
 msgstr "UIT"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:223
+#: classes/class-mmm-cla-admin-pages-tabs.php:240
 #@ mmm-cla-translated
 msgid "delete"
 msgstr "verwijder"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:295
+#: classes/class-mmm-cla-admin-pages-tabs.php:309
 #@ mmm-cla-translated
 msgid "Delete checked"
 msgstr "Verwijder geselecteerd"
@@ -170,20 +169,20 @@ msgstr "De instellingen zijn succesvol opgeslagen."
 msgid "You did not fill in all the required fields."
 msgstr "Je hebt niet alle verplichte velden ingevuld."
 
-#: classes/class-mmm-cla-admin-functions.php:80
+#: classes/class-mmm-cla-admin-functions.php:86
 #@ mmm-cla-translated
 msgid "You have reached the maximum number of levels to add."
 msgstr "Het maximale aantal niveau's is bereikt."
 
-#: classes/class-mmm-cla-admin-functions.php:81
-#: classes/class-mmm-cla-settings.php:703
+#: classes/class-mmm-cla-admin-functions.php:89
+#: classes/class-mmm-cla-settings.php:707
 #@ mmm-cla-translated
 msgid "remove"
 msgstr "Verwijder"
 
 #: classes/class-mmm-cla-admin-pages-tabs.php:85
 #: classes/class-mmm-cla-admin-pages-tabs.php:132
-#: classes/class-mmm-cla-admin-pages-tabs.php:300
+#: classes/class-mmm-cla-admin-pages-tabs.php:314
 #@ mmm-cla-translated
 msgid "No info available."
 msgstr "Geen informatie beschikbaar."
@@ -203,7 +202,7 @@ msgstr "Herstel naar standaard instellingen"
 msgid "<em>*</em> <span class=\"small\">required</span>"
 msgstr "<em>*</em> <span class=\"small\">verplicht</span>"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:318
+#: classes/class-mmm-cla-admin-pages-tabs.php:332
 #: classes/class-mmm-cla-settings.php:37
 #: classes/class-mmm-cla-settings.php:60
 #: classes/class-mmm-cla-settings.php:86
@@ -260,19 +259,19 @@ msgstr "Niveau website zal niet:"
 msgid "If you are not sure which texts belong to which elements (please first check the small text in front of the inputs) look on the &#8217;help&#8217; tab."
 msgstr "Als je niet zeker weet welke tekst bij wel element hoort (lees eerst de kleine tekst bij de velden) kijk dan op de &#8217;help&#8217; tab voor meer informatie."
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:330
+#: classes/class-mmm-cla-admin-pages-tabs.php:344
 #: classes/class-mmm-cla-settings.php:173
 #@ mmm-cla-translated
 msgid "Title small block"
 msgstr "Titel kleine blok"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:331
+#: classes/class-mmm-cla-admin-pages-tabs.php:345
 #: classes/class-mmm-cla-settings.php:179
 #@ mmm-cla-translated
 msgid "Text small block"
 msgstr "Tekst kleine blok"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:334
+#: classes/class-mmm-cla-admin-pages-tabs.php:348
 #: classes/class-mmm-cla-settings.php:185
 #@ mmm-cla-translated
 msgid "Button small block"
@@ -283,43 +282,43 @@ msgstr "Knop kleine blok"
 msgid "Link small block<br /><span class=\"small\">if left blank there will be no more information</span>"
 msgstr "Link kleine blok<br /><span class=\"small\">bij niet invullen zal er geen meer informatie en opties getoond worden</span>"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:345
+#: classes/class-mmm-cla-admin-pages-tabs.php:359
 #: classes/class-mmm-cla-settings.php:198
 #@ mmm-cla-translated
 msgid "Title large block"
 msgstr "Titel grote blok"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:346
+#: classes/class-mmm-cla-admin-pages-tabs.php:360
 #: classes/class-mmm-cla-settings.php:204
 #@ mmm-cla-translated
 msgid "Text large block"
 msgstr "Tekst grote blok"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:348
+#: classes/class-mmm-cla-admin-pages-tabs.php:362
 #: classes/class-mmm-cla-settings.php:210
 #@ mmm-cla-translated
 msgid "Title large wanted"
 msgstr "Titel grote blok gewenst"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:354
+#: classes/class-mmm-cla-admin-pages-tabs.php:368
 #: classes/class-mmm-cla-settings.php:216
 #@ mmm-cla-translated
 msgid "Title large recommended"
 msgstr "Titel grote blok aanbevolen"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:367
+#: classes/class-mmm-cla-admin-pages-tabs.php:381
 #: classes/class-mmm-cla-settings.php:222
 #@ mmm-cla-translated
 msgid "Title large do&#8217;s"
 msgstr "Titel grote blok de website zal wel"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:371
+#: classes/class-mmm-cla-admin-pages-tabs.php:385
 #: classes/class-mmm-cla-settings.php:228
 #@ mmm-cla-translated
 msgid "Title large dont&#8217;s"
 msgstr "Titel grote blok de website zal niet"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:378
+#: classes/class-mmm-cla-admin-pages-tabs.php:392
 #: classes/class-mmm-cla-settings.php:234
 #@ mmm-cla-translated
 msgid "Button large block"
@@ -456,32 +455,27 @@ msgstr "De website zal niet:"
 msgid "Save"
 msgstr "Opslaan"
 
-#: classes/class-mmm-cla-settings.php:698
-#@ mmm-cla-translated
-msgid "slide"
-msgstr "uitklappen"
-
-#: classes/class-mmm-cla-admin-functions.php:79
+#: classes/class-mmm-cla-admin-functions.php:85
 #@ mmm-cla-translated
 msgid "Are you sure you want to reset? The widget will be disabled and all configuration and layout settings will be permanently deleted. (Irreversible)"
 msgstr "Weet je zeker dat je de standaard instellingen wilt terugzetten? De widget word uitgezet en configuratie en opmaak instellingen worden definitief verwijderd uit de database. (onomkeerbaar)"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:335
+#: classes/class-mmm-cla-admin-pages-tabs.php:349
 #@ mmm-cla-translated
 msgid "Link small block"
 msgstr "Kleine blok meer informatie"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:357
+#: classes/class-mmm-cla-admin-pages-tabs.php:371
 #@ mmm-cla-translated
 msgid "Level title large"
 msgstr "Grote blok level titel"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:368
+#: classes/class-mmm-cla-admin-pages-tabs.php:382
 #@ mmm-cla-translated
 msgid "Text large do&#8217;s"
 msgstr "Grote blok de website zal wel"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:372
+#: classes/class-mmm-cla-admin-pages-tabs.php:386
 #@ mmm-cla-translated
 msgid "Text large dont&#8217;s"
 msgstr "Grote blok de website zal niet"
@@ -606,9 +600,41 @@ msgstr "Achtergrondkleur (overlay)<br /><span class=\"small\">in hex #, bij leeg
 msgid "Backgroundopacity (overlay)<br /><span class=\"small\">in %, if left empty it will be 80%<br />(fe 50)</span>"
 msgstr "Achtergrond transparantie (overlay)<br /><span class=\"small\">in %, bij leeg word het 80%<br />(bv 50)</span>"
 
-#: classes/class-mmm-cla-admin-pages-tabs.php:324
+#: classes/class-mmm-cla-admin-pages-tabs.php:338
 #, php-format
 #@ mmm-cla-translated
 msgid "With this plugin (and when you put it on) there wil be 2 elements placed on the website. One small block with basic information and one large block with extended information. The large block will be shown as a semi-fancybox when you click on the more information link. When you leave the link text blank this block will not be inserted.<br /><br /><img src='%s/images/admin/help1.jpg' /><br /><br />Besides configuration on the tabs you can also adjust other things true your them stylesheet. Below you will find a piece of code in wich I will try to make clear to you how the elements are placed.<br /><br />"
 msgstr "Met deze plugin (en wanneer je hem dus AAN zet) worden er 2 elementen op de website geplaats. Een klein blokje met basis informatie en een groot blok met uitgebreidere informatie. Dit grote blok word getoond als semi-fancybox wanneer je op de meer informatie link klikt. Wanneer je de link naar die informatie in het grote blok leeg laat (de text) word dit blok niet getoond.<br /><br /><img src='%s/images/admin/help1.jpg' /><br /><br />Naast de instellingen op de tabbladen kun je natuurlijk ook nog andere zaken aanpassen via je thema stylesheet. Hieronder staat een stukje code waarbij ik je probeer duidelijk te maken hoe de elementen structureel in elkaar steken.<br /><br />"
+
+#: classes/class-mmm-cla-admin-functions.php:87
+#: classes/class-mmm-cla-admin-pages-tabs.php:158
+#@ mmm-cla-translated
+msgid "slide up"
+msgstr "inklappen"
+
+#: classes/class-mmm-cla-admin-functions.php:88
+#: classes/class-mmm-cla-settings.php:702
+#@ mmm-cla-translated
+msgid "slide down"
+msgstr "uitklappen"
+
+#: classes/class-mmm-cla-admin-pages-tabs.php:157
+#@ mmm-cla-translated
+msgid "Google maps"
+msgstr "Google maps"
+
+#: classes/class-mmm-cla-admin-functions.php:75
+#@ mmm-cla-translated
+msgid "ipaddress"
+msgstr "IP adres"
+
+#: classes/class-mmm-cla-admin-functions.php:76
+#@ mmm-cla-translated
+msgid "date_time"
+msgstr "datum/tijd"
+
+#: classes/class-mmm-cla-admin-functions.php:77
+#@ mmm-cla-translated
+msgid "level"
+msgstr "niveau"
 

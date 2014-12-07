@@ -152,6 +152,15 @@ class mmm_cla_admin_pages_tabs
 			{
 				?>
 				<div class="hidden_ajax"></div>
+                <div class="map-canvas-main-toggler">
+                	<h3>
+						<?php _e('Google maps', MMM_PLUGIN_TRANSLATE); ?>
+                    	<a href="javascript:void(0);" class="slide googlemaps"><?php _e('slide up', MMM_PLUGIN_TRANSLATE); ?></a> 
+                    </h3>
+                	<div class="container googlemaps">
+                    	<div class="map-canvas-main" id="map-canvas-main"></div>
+                    </div>
+                </div>
 				<table class="wp-list-table widefat fixed posts">
 					<thead>
 						<tr>
@@ -217,11 +226,49 @@ class mmm_cla_admin_pages_tabs
 											?>
 											<td class="post-title page-title column-title">
 												<strong>
-													<?php echo $the_val; ?>
+													<?
+													if ($ipdetails->country)
+													{
+														?>
+														<img src="<?php echo MMM_PLUGIN_URL; ?>/images/admin/lang-icons/<?php echo strtolower($ipdetails->country); ?>.gif" />
+														<?php
+													}
+													?>
+                                                    <a href="javascript:void(0);" class="showmarker" id="marker<?php echo $col_val->id; ?>"><?php echo $the_val; ?></a>
 												</strong>
 												<div class="row-actions">
 													<span class="trash"><a href="javascript:void(0);" class="ajax delete" id="<?php echo $col_val->id; ?>" title="<?php _e('delete', MMM_PLUGIN_TRANSLATE); ?>"><?php _e('delete', MMM_PLUGIN_TRANSLATE); ?></a></span>
 												</div>
+                                                <?php
+												if ($ipdetails->loc) 
+												{
+													?>
+													<div class="map-canvas-main-info" id="map-canvas-main-info<?php echo $the_id; ?>">
+														<?php
+														$splitted_loc = explode(',', $ipdetails->loc);
+														?>
+														<div class="info-window">
+															<?php
+															if ($ipdetails->country)
+															{
+																?>
+																<img src="<?php echo MMM_PLUGIN_URL; ?>/images/admin/lang-icons/<?php echo strtolower($ipdetails->country); ?>.gif" />
+																<?php
+															}
+															echo $ipdetails->ip;
+															if ($ipdetails->city) { echo '<br />'.$ipdetails->city; }
+															if ($ipdetails->region) { echo '<br />'.$ipdetails->region; }
+															
+															if ($ipdetails->hostname) { echo '<br />'.$ipdetails->hostname; }
+															if ($ipdetails->org) { echo '<br />'.$ipdetails->org; }
+															?>
+														</div>
+														<input name="lat" type="hidden" value="<?php echo $splitted_loc[0]; ?>" />
+														<input name="lng" type="hidden" value="<?php echo $splitted_loc[1]; ?>" />
+													</div>
+													<?php
+												}
+												?>
 											</td>
 											<?php
 										}
@@ -234,40 +281,7 @@ class mmm_cla_admin_pages_tabs
 									}
 									?>
 								</tr>
-                                <tr class="googlemaps linked<?php echo $the_id; ?><?php if ($col_name % 2 == 0) { ?> alternate<?php } ?>">
-                                	<td colspan="<?php echo $cols; ?>">
-                                    	<?php
-										if ($ipdetails->loc) 
-										{
-											?>
-											<div class="map-canvas" id="map-canvas-<?php echo $the_id; ?>">
-												<?php
-												$splitted_loc = explode(',', $ipdetails->loc);
-												?>
-												<div class="info-window">
-													<?php
-													if ($ipdetails->country)
-													{
-														?>
-														<img src="<?php echo MMM_PLUGIN_URL; ?>/images/admin/lang-icons/<?php echo strtolower($ipdetails->country); ?>.gif" />
-														<?php
-													}
-													if ($ipdetails->city) { echo $ipdetails->city; }
-													if ($ipdetails->region) { echo '<br />'.$ipdetails->region; }
-													
-													if ($ipdetails->hostname) { echo '<br />'.$ipdetails->hostname; }
-													if ($ipdetails->org) { echo '<br />'.$ipdetails                                                                                                                   ->org; }
-													?>
-												</div>
-												<input name="lat" type="hidden" value="<?php echo $splitted_loc[0]; ?>" />
-												<input name="lng" type="hidden" value="<?php echo $splitted_loc[1]; ?>" />
-											</div>
-											<?
-										}
-										?>
-                                    </td>
-                                </tr>
-								<?php
+                                <?php
 							} 
 						}
 						?>
@@ -379,9 +393,6 @@ class mmm_cla_admin_pages_tabs
 		</div>
 	|ORANGE:</form>:ORANGE|
 </div>', true);
-            ?>
-            
-			<?
 		}
 		
 }

@@ -12,7 +12,11 @@ class mmm_cla_admin_pages
 			$to_administrate 								= 	$to_administrate_array[count($to_administrate_array)-1];
 			?>
 			<div class="wrap <?php echo MMM_PLUGIN_ID_LONG_MINUS; ?>">
-                <h2><?php echo MMM_PLUGIN_CREATOR; ?> &raquo; <?php echo MMM_PLUGIN_NAME; ?> &raquo; <?php _e('Settings', MMM_PLUGIN_TRANSLATE); ?></h2>
+                <h2>
+					<?php echo MMM_PLUGIN_CREATOR; ?> &raquo; 
+                    <?php echo MMM_PLUGIN_NAME; ?> &raquo; 
+                    <?php _e(ucwords($to_administrate), MMM_PLUGIN_TRANSLATE); ?>
+                </h2>
 
                 <form method="post" action="admin.php?page=<?php echo MMM_PLUGIN_ID_LONG_MINUS.'-'.$to_administrate; ?>"> 
 					<?php 
