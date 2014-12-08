@@ -26,129 +26,129 @@
 								visibility:						visible !important;
 								display:						block !important; 
 							}
-			.mmm-cookie-law-authorization .div-to-table
+			.multimediamonster-cookie-law-authorization .div-to-table
 							{
 								display:						table;
 								width:							100%;
 							}
-			.mmm-cookie-law-authorization .div-to-table .div-to-row
+			.multimediamonster-cookie-law-authorization .div-to-table .div-to-row
 							{
 								display:						table-row;
 							}
-			.mmm-cookie-law-authorization .div-to-table .div-to-row .div-to-cell
+			.multimediamonster-cookie-law-authorization .div-to-table .div-to-row .div-to-cell
 							{
 								display:						table-cell;
 								padding:						5px 0 5px 0;
 								vertical-align:					top;
 							}
-			.mmm-cookie-law-authorization .div-to-table .div-to-row .div-to-cell:first-child
+			.multimediamonster-cookie-law-authorization .div-to-table .div-to-row .div-to-cell:first-child
 							{
 								padding:						5px 20px 5px 0;
 							}
 							
 			/* tabs links */
-			.mmm-cookie-law-authorization a:focus
+			.multimediamonster-cookie-law-authorization a:focus
 							{
 								box-shadow:						0 0 0 0 #000,0 0 0 0 rgba(255,255,255,0) !important;
 							}
 			/* tabs content */
-			.mmm-cookie-law-authorization .form-table
+			.multimediamonster-cookie-law-authorization .form-table
 							{
 								background:						#fff;
 								padding:						0;
 								margin:							5px 0 5px 0;
 								border: 						1px solid #ccc;
 							}
-			.mmm-cookie-law-authorization .form-table td
+			.multimediamonster-cookie-law-authorization .form-table td
 							{
 								padding:						20px;
 							}
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content
 							{
 								display:						none;
 							}
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content.nav-tab-active-content
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content.nav-tab-active-content
 							{
 								display:						block;
 							}
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content img
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content img
 							{
 								max-width:						100%;
 								height:							auto;
 							}
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content h3
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content h3
 							{
 								margin:							0;
 								padding:						0;
 							}
 			/* fieldset and inputs */
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content fieldset
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content fieldset
 							{
 								padding-top:					10px;
 								padding-bottom:					10px;
 								border-bottom: 					1px solid #e5e5e5;
 							}		
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content fieldset:first-child
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content fieldset:first-child
 							{
 								padding-top:					0;
 							}						
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content fieldset:last-child
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content fieldset:last-child
 							{
 								border-bottom: 					0;
 								margin-bottom:					0;
 								padding-bottom:					0;
 							}
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content fieldset label
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content fieldset label
 							{
 								font-weight:					bold;
 								margin:							0 !important;
 							}
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label,
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content div.input
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label,
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content div.input
 							{
 								display:						table-cell;
 								vertical-align:					top;
 							}
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label
 							{
 								width:							275px;
 							}
-			.mmm-cookie-law-authorization .wp-list-table.widefat
+			.multimediamonster-cookie-law-authorization .wp-list-table.widefat
 							{
 								margin:							5px 0 5px 0;
 							}
-			.mmm-cookie-law-authorization .map-canvas-main-toggler h3
+			.multimediamonster-cookie-law-authorization .map-canvas-main-toggler h3
 							{
 								padding:						10px;
 								background-color:				#FFF;
 								border:							1px solid #ccc;
 								margin:							0;
 							}
-			.mmm-cookie-law-authorization .map-canvas-main-toggler h3 a
+			.multimediamonster-cookie-law-authorization .map-canvas-main-toggler h3 a
 							{
 								font-size: 						11px;
 								margin-left: 					10px;
 							}
-			.mmm-cookie-law-authorization .container.googlemaps
+			.multimediamonster-cookie-law-authorization .container.googlemaps
 							{
 								border:							1px solid #ccc;
 								border-top:						0;
 							}
-			.mmm-cookie-law-authorization .map-canvas-main
+			.multimediamonster-cookie-law-authorization .map-canvas-main
 							{
 								width:							100%;
 								height: 						350px;
 							}
-			.mmm-cookie-law-authorization .map-canvas-main-info
+			.multimediamonster-cookie-law-authorization .map-canvas-main-info
 							{
 								display:						none;
 							}
-			.mmm-cookie-law-authorization em
+			.multimediamonster-cookie-law-authorization em
 							{
 								color:							#F00;
 								display:						inline;
 							}
-			.mmm-cookie-law-authorization .small
+			.multimediamonster-cookie-law-authorization .small
 							{
 								font-size:						11px;
 								color:							#999;
@@ -156,40 +156,40 @@
 								display:						inline;
 							}
 			/* textareas and help wider */
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label[for='text']
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label[for='text']
 							{
 								vertical-align:					middle;
 							}
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label[for='help'],
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content div.input.help,
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label[for='textarea'],
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content div.input.textarea,
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label[for='levels'],
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content div.input.levels
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label[for='help'],
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content div.input.help,
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label[for='textarea'],
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content div.input.textarea,
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label[for='levels'],
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content div.input.levels
 							{
 								display:						block;
 								vertical-align:					top;
 							}
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label[for='help'],
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label[for='textarea'],
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label[for='levels']
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label[for='help'],
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label[for='textarea'],
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content label[for='levels']
 							{
 								width:							auto;
 							}
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content fieldset .input.textarea
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content fieldset .input.textarea
 							{
 								margin-top:						-22px;
 							}
 			/* levels */
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content .input.levels .input.levels
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content .input.levels .input.levels
 							{
 								margin-bottom:					5px;
 							}
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content .input.levels .input.levels:last-child
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content .input.levels .input.levels:last-child
 							{
 								margin-bottom:					0;
 							}
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content .input.levels .input.levels b
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content .input.levels .input.levels b
 							{
 								background-color:				#e4e4e4;
 								border: 						1px solid #ccc;
@@ -197,36 +197,36 @@
 								padding:						10px;
 								text-align:						center;
 							}
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content .input.levels .input.levels .container
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content .input.levels .input.levels .container
 							{
 								background-color:				#f1f1f1;
 								border: 						1px solid #ccc;
 								border-top:						0;
 								display:						block;
 							}
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content .input.levels .input.levels .container fieldset
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content .input.levels .input.levels .container fieldset
 							{
 								padding:						10px;
 							}
-			.mmm-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content fieldset .levels div.duplicate b a
+			.multimediamonster-cookie-law-authorization .nav-tab-wrapper-content .nav-tab-content fieldset .levels div.duplicate b a
 							{
 								font-size:						11px;
 								margin-left:					10px;
 							}
 			/* code container */
-			.mmm-cookie-law-authorization div.code-container
+			.multimediamonster-cookie-law-authorization div.code-container
 							{
 								border:							1px solid #b4d333;
 								padding:						0 3px 0 0;
 								margin:							0 0 10px 0;
 							}
-			.mmm-cookie-law-authorization div.code
+			.multimediamonster-cookie-law-authorization div.code
 							{
 								display:						table;
 								width:							100%;
 							}
-			.mmm-cookie-law-authorization div.code .linenum,
-			.mmm-cookie-law-authorization div.code .linetext
+			.multimediamonster-cookie-law-authorization div.code .linenum,
+			.multimediamonster-cookie-law-authorization div.code .linetext
 							{
 								display:						table-cell;
 								vertical-align:					top;
@@ -237,17 +237,17 @@
 								padding:						0;
 								border:							3px solid #fff;
 							}
-			.mmm-cookie-law-authorization div.code .linenum
+			.multimediamonster-cookie-law-authorization div.code .linenum
 							{
 								width:							20px; 
 								text-align:						right;
 							}
-			.mmm-cookie-law-authorization div.code .linenum .inner
+			.multimediamonster-cookie-law-authorization div.code .linenum .inner
 							{
 								background:						#CCC;
 								padding:						5px;
 							}
-			.mmm-cookie-law-authorization div.code .linetext
+			.multimediamonster-cookie-law-authorization div.code .linetext
 							{
 								text-align:						left;
 								padding:						0;
@@ -255,39 +255,39 @@
 								white-space: 					nowrap;
 								background: 					rgba(0,0,0,.07);
 							}
-			.mmm-cookie-law-authorization div.code .linetext code    
+			.multimediamonster-cookie-law-authorization div.code .linetext code    
 							{
 								display:						block;
 								background: 					rgba(0,0,0,0);
 								padding:						5px;
 								width:							0;
 							}
-			.mmm-cookie-law-authorization div.code .linetext code .html
+			.multimediamonster-cookie-law-authorization div.code .linetext code .html
 							{
 								color:							#009;
 							}
-			.mmm-cookie-law-authorization div.code .linetext code .black
+			.multimediamonster-cookie-law-authorization div.code .linetext code .black
 							{
 								color:							#000;
 							}
-			.mmm-cookie-law-authorization div.code .linetext code .orange,
-			.mmm-cookie-law-authorization div.code .linetext code .comment
+			.multimediamonster-cookie-law-authorization div.code .linetext code .orange,
+			.multimediamonster-cookie-law-authorization div.code .linetext code .comment
 							{
 								color:							#F90;
 							}
-			.mmm-cookie-law-authorization div.code .linetext code .lightblue
+			.multimediamonster-cookie-law-authorization div.code .linetext code .lightblue
 							{
 								color:							#00F;
 							}
-			.mmm-cookie-law-authorization div.code .linetext code .green
+			.multimediamonster-cookie-law-authorization div.code .linetext code .green
 							{
 								color:							#006600;
 							}
-			.mmm-cookie-law-authorization div.code .linetext code .pink
+			.multimediamonster-cookie-law-authorization div.code .linetext code .pink
 							{
 								color:							#ff00ff;
 							}
-			.mmm-cookie-law-authorization div.code .linetext code .default
+			.multimediamonster-cookie-law-authorization div.code .linetext code .default
 							{
 								color:							#ff3a00;
 							}
