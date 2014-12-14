@@ -1,9 +1,9 @@
 <?php
 /**
- Plugin Name: 								MultiMediaMonster Cookie law authorization
+ Plugin Name: 								Cookie law authorization
  Plugin URI: 								http://www.multimediamonster.nl
  Description: 								Show a floating box on every page that make visitors required to choose a qookie level. After choosing and authorizing a level the information is logged in the database.
- Version: 									1.0
+ Version: 									1.1
  Author: 									MultiMediaMonster, Renske van der Heijden
  Author URI: 								http://www.multimediamonster.nl
  License: 									GPLv2 or later
@@ -19,7 +19,7 @@
 	define('MMM_PLUGIN_CREATOR_URL',			'www.multimediamonster.nl');
 	define('MMM_PLUGIN_CREATOR_EMAIL',			'renske@multimediamonster.nl');
 	define('MMM_PLUGIN_NAME', 					'Cookie law authorization');
-	define('MMM_PLUGIN_ID_LONG', 				'mmm_cookie_law_authorization');
+	define('MMM_PLUGIN_ID_LONG', 				'multimediamonster_cookie_law_authorization');
 	define('MMM_PLUGIN_ID_LONG_MINUS', 			str_replace('_', '-', MMM_PLUGIN_ID_LONG));
 	define('MMM_PLUGIN_ID_SHORT', 				'mmm_cla');
 	define('MMM_PLUGIN_ID_SHORT_MINUS',			str_replace('_', '-', MMM_PLUGIN_ID_SHORT));

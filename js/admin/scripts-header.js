@@ -92,7 +92,7 @@
 			create_colorpicker();
 			
 			// reset
-			jQuery("body").delegate(".mmm-cookie-law-authorization input[name='reset']","click",function(e)
+			jQuery("body").delegate(".multimediamonster-cookie-law-authorization input[name='reset']","click",function(e)
 			{
 				var answer 									= 	confirm(translated_for_js.confirm_reset);
 				if(answer)
@@ -105,7 +105,7 @@
 				}
 			});
 			// switch tabs
-			jQuery("body").delegate(".mmm-cookie-law-authorization .nav-tab","click",function(e)
+			jQuery("body").delegate(".multimediamonster-cookie-law-authorization .nav-tab","click",function(e)
 			{
 				var selected_tab_class 						= 	jQuery(this).attr('class');
 				// the button class
