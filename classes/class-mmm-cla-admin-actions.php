@@ -23,18 +23,18 @@ class mmm_cla_admin_actions
 			{
 				$messages['messages'] 							= 	array
 																	(
-																		0 	=> 	array('updated', __('The settings have been succesfully updated.', MMM_PLUGIN_TRANSLATE)),
-																		1 	=> 	array('error', __('You are not authorized to perform this action.', MMM_PLUGIN_TRANSLATE)),
-																		2 	=> 	array('error', __('You did not fill in all the required fields.', MMM_PLUGIN_TRANSLATE))
+																		0 	=> 	array('updated', __('The settings have been succesfully updated.', MMM_CLA_PLUGIN_TRANSLATE)),
+																		1 	=> 	array('error', __('You are not authorized to perform this action.', MMM_CLA_PLUGIN_TRANSLATE)),
+																		2 	=> 	array('error', __('You did not fill in all the required fields.', MMM_CLA_PLUGIN_TRANSLATE))
 																	);
 			}
 			if ($to_administrate == 'authorized')
 			{
 				$messages['messages'] 							= 	array
 																	(
-																		0 	=> 	array('updated', __('The IP-addresses are succesfully deleted.', MMM_PLUGIN_TRANSLATE)),
-																		1 	=> 	array('error', __('You are not authorized to perform this action.', MMM_PLUGIN_TRANSLATE)),
-																		2 	=> 	array('error', __('Please select one or more IP-adresses.', MMM_PLUGIN_TRANSLATE))
+																		0 	=> 	array('updated', __('The IP-addresses are succesfully deleted.', MMM_CLA_PLUGIN_TRANSLATE)),
+																		1 	=> 	array('error', __('You are not authorized to perform this action.', MMM_CLA_PLUGIN_TRANSLATE)),
+																		2 	=> 	array('error', __('Please select one or more IP-adresses.', MMM_CLA_PLUGIN_TRANSLATE))
 																	);
 			}
 			return $messages;
@@ -58,9 +58,9 @@ class mmm_cla_admin_actions
 			// ---------------------------------------------------------------------------------------------------------------------
 			
 				$redirect_error										= 	0;
-				if (!empty($_POST['nonce_'.MMM_PLUGIN_ID_LONG]))
+				if (!empty($_POST['nonce_'.MMM_CLA_PLUGIN_ID_LONG]))
 				{
-					if (!wp_verify_nonce($_POST['nonce_'.MMM_PLUGIN_ID_LONG], 'handle_'.MMM_PLUGIN_ID_LONG))
+					if (!wp_verify_nonce($_POST['nonce_'.MMM_CLA_PLUGIN_ID_LONG], 'handle_'.MMM_CLA_PLUGIN_ID_LONG))
 					{
 						$redirect_error								=	1;
 					}
@@ -98,7 +98,7 @@ class mmm_cla_admin_actions
 													{
 														if (isset($values_val_val['required']) && $values_val_val['required'] == true)
 														{
-															$the_post_val 					= 	$_POST[MMM_PLUGIN_ID_SHORT.'_'.$the_post_key_first][$the_post_key_last][$values_val_key.$values_key];
+															$the_post_val 					= 	$_POST[MMM_CLA_PLUGIN_ID_SHORT.'_'.$the_post_key_first][$the_post_key_last][$values_val_key.$values_key];
 															if (!$the_post_val)
 															{
 																$looped_error				= 	2;
@@ -109,7 +109,7 @@ class mmm_cla_admin_actions
 											}
 											else
 											{
-												$the_post_val 								= 	$_POST[MMM_PLUGIN_ID_SHORT.'_'.$the_post_key_first][$the_post_key_last][$formfields_val_key];
+												$the_post_val 								= 	$_POST[MMM_CLA_PLUGIN_ID_SHORT.'_'.$the_post_key_first][$the_post_key_last][$formfields_val_key];
 												if (!$the_post_val)
 												{
 													$looped_error							= 	2;
@@ -125,14 +125,14 @@ class mmm_cla_admin_actions
 								else
 								{
 									$defaults 						= 	mmm_cla_settings::default_values();
-									$instance 						= 	wp_parse_args((array) $_POST[MMM_PLUGIN_ID_SHORT.'_settings'], $defaults);
+									$instance 						= 	wp_parse_args((array) $_POST[MMM_CLA_PLUGIN_ID_SHORT.'_settings'], $defaults);
 									if (isset($_POST['reset']) && $_POST['reset'])
 									{
-										sdelete_option( MMM_PLUGIN_ID_SHORT.'_settings' );
+										sdelete_option( MMM_CLA_PLUGIN_ID_SHORT.'_settings' );
 									}
 									elseif (isset($_POST['save']) && $_POST['save'])
 									{
-										update_option( MMM_PLUGIN_ID_SHORT.'_settings', $instance );
+										update_option( MMM_CLA_PLUGIN_ID_SHORT.'_settings', $instance );
 									}
 								}
 							}
@@ -154,7 +154,7 @@ class mmm_cla_admin_actions
 									foreach ($_POST['delete_ip_with_id'] as $posted_key => $posted_val)
 									{
 										//delete the records
-										$query_to_run 				= 	"DELETE FROM {$wpdb->prefix}".MMM_PLUGIN_ID_SHORT." WHERE id = $posted_val";
+										$query_to_run 				= 	"DELETE FROM {$wpdb->prefix}".MMM_CLA_PLUGIN_ID_SHORT." WHERE id = $posted_val";
 										$wpdb->query( $query_to_run );
 									}
 								}

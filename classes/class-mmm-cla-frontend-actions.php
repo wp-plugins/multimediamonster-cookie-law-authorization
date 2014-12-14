@@ -7,7 +7,7 @@ class mmm_cla_frontend_actions
 		$ip 									= 	mmm_cla_frontend_functions::get_ip();
 		$result 								= 	$wpdb->insert
 													( 
-														"{$wpdb->prefix}".MMM_PLUGIN_ID_SHORT, 
+														"{$wpdb->prefix}".MMM_CLA_PLUGIN_ID_SHORT, 
 															array( 
 																'id' 							=> "",
 																'ipaddress' 					=> $ip,

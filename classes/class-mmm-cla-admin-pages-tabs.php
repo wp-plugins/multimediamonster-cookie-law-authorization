@@ -82,7 +82,7 @@ class mmm_cla_admin_pages_tabs
                                         }
                                         else
                                         {
-                                            echo __( 'No info available.' , MMM_PLUGIN_TRANSLATE );
+                                            echo __( 'No info available.' , MMM_CLA_PLUGIN_TRANSLATE );
                                         }
                                         ?>
                                     </div>
@@ -94,9 +94,9 @@ class mmm_cla_admin_pages_tabs
                     	</td>
                     </tr>
                 </table>
-                <input type="submit" id="save" name="save" class="button-primary" value="<?php _e( 'Save settings', MMM_PLUGIN_TRANSLATE ) ?>"/>
-                <input type="submit" id="reset" name="reset" class="button-primary" value="<?php _e( 'Reset settings', MMM_PLUGIN_TRANSLATE ) ?>"/>
-                <br /><?php  echo __( '<em>*</em> <span class="small">required</span>' , MMM_PLUGIN_TRANSLATE ); ?>
+                <input type="submit" id="save" name="save" class="button-primary" value="<?php _e( 'Save settings', MMM_CLA_PLUGIN_TRANSLATE ) ?>"/>
+                <input type="submit" id="reset" name="reset" class="button-primary" value="<?php _e( 'Reset settings', MMM_CLA_PLUGIN_TRANSLATE ) ?>"/>
+                <br /><?php  echo __( '<em>*</em> <span class="small">required</span>' , MMM_CLA_PLUGIN_TRANSLATE ); ?>
 				<?php
 			}
 			elseif (count($tabs) == 1)
@@ -129,7 +129,7 @@ class mmm_cla_admin_pages_tabs
 					}
 					else
 					{
-						echo __( 'No info available.' , MMM_PLUGIN_TRANSLATE );
+						echo __( 'No info available.' , MMM_CLA_PLUGIN_TRANSLATE );
 					}
 				}
 			}
@@ -154,8 +154,8 @@ class mmm_cla_admin_pages_tabs
 				<div class="hidden_ajax"></div>
                 <div class="map-canvas-main-toggler">
                 	<h3>
-						<?php _e('Google maps', MMM_PLUGIN_TRANSLATE); ?>
-                    	<a href="javascript:void(0);" class="slide googlemaps"><?php _e('slide up', MMM_PLUGIN_TRANSLATE); ?></a> 
+						<?php _e('Google maps', MMM_CLA_PLUGIN_TRANSLATE); ?>
+                    	<a href="javascript:void(0);" class="slide googlemaps"><?php _e('slide up', MMM_CLA_PLUGIN_TRANSLATE); ?></a> 
                     </h3>
                 	<div class="container googlemaps">
                     	<div class="map-canvas-main" id="map-canvas-main"></div>
@@ -169,14 +169,14 @@ class mmm_cla_admin_pages_tabs
 							foreach ( $plugin_results[0] as $col_name => $col_val) 
 							{ 
 								$column_th_class 			= ' class="'.$col_name.'"';
-								$column_th_val 				= __($col_name, MMM_PLUGIN_TRANSLATE);
+								$column_th_val 				= __($col_name, MMM_CLA_PLUGIN_TRANSLATE);
 								if ($col_name == 'id')
 								{
 									$column_th_class 		= ' class="check-column"';
-									$column_th_val 			= '<input type="checkbox" id="" class="'.MMM_PLUGIN_ID_LONG_MINUS.'-select-all" title="'.MMM_PLUGIN_ID_LONG_MINUS.'-bulk-action">';
+									$column_th_val 			= '<input type="checkbox" id="" class="'.MMM_CLA_PLUGIN_ID_LONG_MINUS.'-select-all" title="'.MMM_CLA_PLUGIN_ID_LONG_MINUS.'-bulk-action">';
 								}
 								?>
-								<th<?php echo $column_th_class; ?>><?php _e( $column_th_val , MMM_PLUGIN_TRANSLATE )?></th>
+								<th<?php echo $column_th_class; ?>><?php _e( $column_th_val , MMM_CLA_PLUGIN_TRANSLATE )?></th>
 								<?php
 								$cols++;
 							}
@@ -210,7 +210,7 @@ class mmm_cla_admin_pages_tabs
 										if ($key == 'level')
 										{
 											$defaults 	= 	mmm_cla_settings::default_values();
-											$values_db	= 	get_option( MMM_PLUGIN_ID_SHORT.'_settings', $defaults );
+											$values_db	= 	get_option( MMM_CLA_PLUGIN_ID_SHORT.'_settings', $defaults );
 											$the_val 	= 	$val.' <span class="small">('.$values_db['levels']['title'.$val].')</span>';
 										}
 										// show the loop
@@ -230,14 +230,14 @@ class mmm_cla_admin_pages_tabs
 													if ($ipdetails->country)
 													{
 														?>
-														<img src="<?php echo MMM_PLUGIN_URL; ?>/images/admin/lang-icons/<?php echo strtolower($ipdetails->country); ?>.gif" />
+														<img src="<?php echo MMM_CLA_PLUGIN_URL; ?>/images/admin/lang-icons/<?php echo strtolower($ipdetails->country); ?>.gif" />
 														<?php
 													}
 													?>
                                                     <a href="javascript:void(0);" class="showmarker" id="marker<?php echo $col_val->id; ?>"><?php echo $the_val; ?></a>
 												</strong>
 												<div class="row-actions">
-													<span class="trash"><a href="javascript:void(0);" class="ajax delete" id="<?php echo $col_val->id; ?>" title="<?php _e('delete', MMM_PLUGIN_TRANSLATE); ?>"><?php _e('delete', MMM_PLUGIN_TRANSLATE); ?></a></span>
+													<span class="trash"><a href="javascript:void(0);" class="ajax delete" id="<?php echo $col_val->id; ?>" title="<?php _e('delete', MMM_CLA_PLUGIN_TRANSLATE); ?>"><?php _e('delete', MMM_CLA_PLUGIN_TRANSLATE); ?></a></span>
 												</div>
                                                 <?php
 												if ($ipdetails->loc) 
@@ -252,7 +252,7 @@ class mmm_cla_admin_pages_tabs
 															if ($ipdetails->country)
 															{
 																?>
-																<img src="<?php echo MMM_PLUGIN_URL; ?>/images/admin/lang-icons/<?php echo strtolower($ipdetails->country); ?>.gif" />
+																<img src="<?php echo MMM_CLA_PLUGIN_URL; ?>/images/admin/lang-icons/<?php echo strtolower($ipdetails->country); ?>.gif" />
 																<?php
 															}
 															echo $ipdetails->ip;
@@ -292,26 +292,26 @@ class mmm_cla_admin_pages_tabs
 							foreach ( $plugin_results[0] as $col_name => $col_val) 
 							{ 
 								$column_th_class 			= '';
-								$column_th_val 				= __($col_name, MMM_PLUGIN_TRANSLATE);
+								$column_th_val 				= __($col_name, MMM_CLA_PLUGIN_TRANSLATE);
 								if ($col_name == 'id')
 								{
 									$column_th_class 		= ' class="check-column"';
 									$column_th_val 			= '<input type="checkbox" id="" class="ninja-forms-select-all" title="ninja-forms-bulk-action">';
 								}
 								?>
-								<th<?php echo $column_th_class; ?>><?php _e( $column_th_val , MMM_PLUGIN_TRANSLATE )?></th>
+								<th<?php echo $column_th_class; ?>><?php _e( $column_th_val , MMM_CLA_PLUGIN_TRANSLATE )?></th>
 								<?php
 							}
 							?>
 						</tr>
 					</tfoot>
 				</table>
-				<input class="button-primary" type="submit" value="<?php _e( 'Delete checked' , MMM_PLUGIN_TRANSLATE )?>" />
+				<input class="button-primary" type="submit" value="<?php _e( 'Delete checked' , MMM_CLA_PLUGIN_TRANSLATE )?>" />
 				<?php
 			}
 			else
 			{
-				echo __( 'No info available.' , MMM_PLUGIN_TRANSLATE );
+				echo __( 'No info available.' , MMM_CLA_PLUGIN_TRANSLATE );
 			}
 		}
 		
@@ -329,24 +329,24 @@ class mmm_cla_admin_pages_tabs
 		{
 			//values
 			?>
-            <h3><?php echo __('Help', MMM_PLUGIN_TRANSLATE); ?></h3>
+            <h3><?php echo __('Help', MMM_CLA_PLUGIN_TRANSLATE); ?></h3>
             
 			<?php
 			$replace_array 								= 	array(
-																MMM_PLUGIN_URL
+																MMM_CLA_PLUGIN_URL
 															);
-			mmm_cla_admin_functions::printf_array (__("With this plugin (and when you put it on) there wil be 2 elements placed on the website. One small block with basic information and one large block with extended information. The large block will be shown as a semi-fancybox when you click on the more information link. When you leave the link text blank this block will not be inserted.<br /><br /><img src='%s/images/admin/help1.jpg' /><br /><br />Besides configuration on the tabs you can also adjust other things true your them stylesheet. Below you will find a piece of code in wich I will try to make clear to you how the elements are placed.<br /><br />", MMM_PLUGIN_TRANSLATE), $replace_array); 
+			mmm_cla_admin_functions::printf_array (__("With this plugin (and when you put it on) there wil be 2 elements placed on the website. One small block with basic information and one large block with extended information. The large block will be shown as a semi-fancybox when you click on the more information link. When you leave the link text blank this block will not be inserted.<br /><br /><img src='%s/images/admin/help1.jpg' /><br /><br />Besides configuration on the tabs you can also adjust other things true your them stylesheet. Below you will find a piece of code in wich I will try to make clear to you how the elements are placed.<br /><br />", MMM_CLA_PLUGIN_TRANSLATE), $replace_array); 
 			?>
 			<?php
             echo mmm_cla_admin_functions::printCode('<div class=|LIGHTBLUE:"cookie-tool-container small":LIGHTBLUE|> 
 	|ORANGE:<form name=|LIGHTBLUE:"form-cookie-law":LIGHTBLUE|>:ORANGE|
 		<div class=|LIGHTBLUE:"cookie-tool-content":LIGHTBLUE|> 
-			<h1>|BLACK:|DYNAMIC:'.__('Title small block', MMM_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|</h1>
-			|BLACK:|DYNAMIC:'.__('Text small block', MMM_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|
+			<h1>|BLACK:|DYNAMIC:'.__('Title small block', MMM_CLA_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|</h1>
+			|BLACK:|DYNAMIC:'.__('Text small block', MMM_CLA_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|
 			<br />
 			|ORANGE:<input type=|LIGHTBLUE:"hidden":LIGHTBLUE| name=|LIGHTBLUE:"cookie_tool_choice":LIGHTBLUE| value=|LIGHTBLUE:"1":LIGHTBLUE| />:ORANGE|
-			|ORANGE:<input type=|LIGHTBLUE:"button":LIGHTBLUE| value=|LIGHTBLUE:"|DYNAMIC:'.__('Button small block', MMM_PLUGIN_TRANSLATE).':DYNAMIC|":LIGHTBLUE| />:ORANGE|
-			|GREEN:<a class="|LIGHTBLUE:mmm-fancybox:LIGHTBLUE|">|BLACK:|DYNAMIC:'.__('Link small block', MMM_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|</a>:GREEN|
+			|ORANGE:<input type=|LIGHTBLUE:"button":LIGHTBLUE| value=|LIGHTBLUE:"|DYNAMIC:'.__('Button small block', MMM_CLA_PLUGIN_TRANSLATE).':DYNAMIC|":LIGHTBLUE| />:ORANGE|
+			|GREEN:<a class="|LIGHTBLUE:mmm-fancybox:LIGHTBLUE|">|BLACK:|DYNAMIC:'.__('Link small block', MMM_CLA_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|</a>:GREEN|
 		</div>
 	|ORANGE:</form>:ORANGE|
 </div>', true);
@@ -356,19 +356,19 @@ class mmm_cla_admin_pages_tabs
             echo mmm_cla_admin_functions::printCode('<div class=|LIGHTBLUE:"cookie-tool-container large":LIGHTBLUE| id=|LIGHTBLUE:"cookie-tool-container-large":LIGHTBLUE|>
 	|ORANGE:<form name=|LIGHTBLUE:"form-cookie-law":LIGHTBLUE|>:ORANGE|
 		<div class=|LIGHTBLUE:"cookie-tool-content":LIGHTBLUE|>
-			<h1>|BLACK:|DYNAMIC:'.__('Title large block', MMM_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|</h1>
-			|BLACK:|DYNAMIC:'.__('Text large block', MMM_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|
+			<h1>|BLACK:|DYNAMIC:'.__('Title large block', MMM_CLA_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|</h1>
+			|BLACK:|DYNAMIC:'.__('Text large block', MMM_CLA_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|
 			<div class=|LIGHTBLUE:"options":LIGHTBLUE|>
-				<h2>|BLACK:|DYNAMIC:'.__('Title large wanted', MMM_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|</h2>
+				<h2>|BLACK:|DYNAMIC:'.__('Title large wanted', MMM_CLA_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|</h2>
 				<div class=|LIGHTBLUE:"div-to-table":LIGHTBLUE|>
 					<?php /* LEVEL LOOP */ ?>
 					<div class=|LIGHTBLUE:"div-to-cell option<?php /* LEVEL NR */ ?>":LIGHTBLUE| style=|LIGHTBLUE:"width|PINK:::PINK|<?php /* CALCULATED WIDTH */ ?>%|PINK:;:PINK|":LIGHTBLUE|>
 						<div class=|LIGHTBLUE:"image":LIGHTBLUE|></div>
 						<?php /* ONLY IF LOOPED IS THE FIRST */ ?>
-						<div class=|LIGHTBLUE:"cookie-tool-recommended":LIGHTBLUE|>|BLACK:|DYNAMIC:'.__('Title large recommended', MMM_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|</div>
+						<div class=|LIGHTBLUE:"cookie-tool-recommended":LIGHTBLUE|>|BLACK:|DYNAMIC:'.__('Title large recommended', MMM_CLA_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|</div>
 						<?php /* END ONLY IF LOOPED IS THE FIRST */ ?>
 						|ORANGE:<input type=|LIGHTBLUE:"radio":LIGHTBLUE| class=|LIGHTBLUE:"radio":LIGHTBLUE| name=|LIGHTBLUE:"cookie_tool_choice":LIGHTBLUE| value=|LIGHTBLUE:"<?php /* LEVEL NR */ ?>":LIGHTBLUE| checked=|LIGHTBLUE:"checked":LIGHTBLUE| />:ORANGE|
-						|BLACK:|DYNAMIC:'.__('Level title large', MMM_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK| 
+						|BLACK:|DYNAMIC:'.__('Level title large', MMM_CLA_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK| 
 					</div>
 					<?php /* END LEVEL LOOP */ ?>
 				</div>
@@ -378,18 +378,18 @@ class mmm_cla_admin_pages_tabs
 				<div class=|LIGHTBLUE:"options-explained-item":LIGHTBLUE| id=|LIGHTBLUE:"cookie-tool-view<?php /* LEVEL NR */ ?>":LIGHTBLUE|>
 					<div class=|LIGHTBLUE:"div-to-table":LIGHTBLUE|>
 						<div class=|LIGHTBLUE:"div-to-cell options-do":LIGHTBLUE|>
-							<h3>|BLACK:|DYNAMIC:'.__('Title large do&#8217;s', MMM_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|</h3>
-							|BLACK:|DYNAMIC:'.__('Text large do&#8217;s', MMM_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|
+							<h3>|BLACK:|DYNAMIC:'.__('Title large do&#8217;s', MMM_CLA_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|</h3>
+							|BLACK:|DYNAMIC:'.__('Text large do&#8217;s', MMM_CLA_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|
 						</div>
 						<div class=|LIGHTBLUE:"div-to-cell options-dont":LIGHTBLUE|>
-							<h3>|BLACK:|DYNAMIC:'.__('Title large dont&#8217;s', MMM_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|</h3>
-							|BLACK:|DYNAMIC:'.__('Text large dont&#8217;s', MMM_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|
+							<h3>|BLACK:|DYNAMIC:'.__('Title large dont&#8217;s', MMM_CLA_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|</h3>
+							|BLACK:|DYNAMIC:'.__('Text large dont&#8217;s', MMM_CLA_PLUGIN_TRANSLATE).':DYNAMIC|:BLACK|
 						</div>
 					</div>
 				</div>
 				<?php /* END LEVEL LOOP */ ?>
 			</div>
-			|ORANGE:<input type=|LIGHTBLUE:"button":LIGHTBLUE| name=|LIGHTBLUE:"cookie-law-accept":LIGHTBLUE| value=|LIGHTBLUE:"|DYNAMIC:'.__('Button large block', MMM_PLUGIN_TRANSLATE).':DYNAMIC|":LIGHTBLUE| />:ORANGE|
+			|ORANGE:<input type=|LIGHTBLUE:"button":LIGHTBLUE| name=|LIGHTBLUE:"cookie-law-accept":LIGHTBLUE| value=|LIGHTBLUE:"|DYNAMIC:'.__('Button large block', MMM_CLA_PLUGIN_TRANSLATE).':DYNAMIC|":LIGHTBLUE| />:ORANGE|
 		</div>
 	|ORANGE:</form>:ORANGE|
 </div>', true);

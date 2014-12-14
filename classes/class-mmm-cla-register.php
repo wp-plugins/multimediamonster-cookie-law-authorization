@@ -8,13 +8,13 @@ class mmm_cla_register
 	
 		static function activate() 
 		{
-			add_option( 'activated_'.MMM_PLUGIN_ID_LONG, 'slug-'.MMM_PLUGIN_ID_LONG_MINUS );
+			add_option( 'activated_'.MMM_CLA_PLUGIN_ID_LONG, 'slug-'.MMM_CLA_PLUGIN_ID_LONG_MINUS );
 		}
 		static function load_this_plugin()
 		{
-			if ( is_admin() && get_option( 'activated_'.MMM_PLUGIN_ID_LONG ) == 'slug-'.MMM_PLUGIN_ID_LONG_MINUS )
+			if ( is_admin() && get_option( 'activated_'.MMM_CLA_PLUGIN_ID_LONG ) == 'slug-'.MMM_CLA_PLUGIN_ID_LONG_MINUS )
 			{
-				delete_option( 'activated_'.MMM_PLUGIN_ID_LONG );
+				delete_option( 'activated_'.MMM_CLA_PLUGIN_ID_LONG );
 				add_action( 'init', self::create_table() );
 			}
 		}
@@ -35,7 +35,7 @@ class mmm_cla_register
 		
 		static function uninstall() 
 		{
-			delete_option( MMM_PLUGIN_ID_SHORT.'_settings' );
+			delete_option( MMM_CLA_PLUGIN_ID_SHORT.'_settings' );
 			add_action( 'init', self::drop_table() );
 		}
 	
@@ -46,7 +46,7 @@ class mmm_cla_register
 	
 		static function plugin_load_textdomain() 
 		{
-			load_plugin_textdomain( 'mmm-cla-translated', false, MMM_PLUGIN_TEXTDOMAIN ); 
+			load_plugin_textdomain( 'mmm-cla-translated', false, MMM_CLA_PLUGIN_TEXTDOMAIN ); 
 		}
 	
 	// ---------------------------------------------------------------------------------------------------------------------
@@ -65,14 +65,14 @@ class mmm_cla_register
 														'`level` int(11) NOT NULL', 
 														'PRIMARY KEY (`id`)'
 													);
-			$query_to_run 						= 	"CREATE TABLE IF NOT EXISTS {$wpdb->prefix}".MMM_PLUGIN_ID_SHORT." 
+			$query_to_run 						= 	"CREATE TABLE IF NOT EXISTS {$wpdb->prefix}".MMM_CLA_PLUGIN_ID_SHORT." 
 													(".join(', ', $mmm_plugin_table_cols).") DEFAULT CHARSET=utf8;";
 			$wpdb->query( $query_to_run );
 		}
 		static function drop_table ()
 		{
 			global $wpdb;
-			$query_to_run 						= 	"DROP TABLE IF EXISTS {$wpdb->prefix}".MMM_PLUGIN_ID_SHORT;
+			$query_to_run 						= 	"DROP TABLE IF EXISTS {$wpdb->prefix}".MMM_CLA_PLUGIN_ID_SHORT;
 			$wpdb->query( $query_to_run );
 		}
 }

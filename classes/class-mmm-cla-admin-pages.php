@@ -11,23 +11,23 @@ class mmm_cla_admin_pages
 			$to_administrate_array							= 	explode('-', $_GET['page']);
 			$to_administrate 								= 	$to_administrate_array[count($to_administrate_array)-1];
 			?>
-			<div class="wrap <?php echo MMM_PLUGIN_ID_LONG_MINUS; ?>">
+			<div class="wrap <?php echo MMM_CLA_PLUGIN_ID_LONG_MINUS; ?>">
                 <h2>
-					<?php echo MMM_PLUGIN_CREATOR; ?> &raquo; 
-                    <?php echo MMM_PLUGIN_NAME; ?> &raquo; 
-                    <?php _e(ucwords($to_administrate), MMM_PLUGIN_TRANSLATE); ?>
+					<?php echo MMM_CLA_PLUGIN_CREATOR; ?> &raquo; 
+                    <?php echo MMM_CLA_PLUGIN_NAME; ?> &raquo; 
+                    <?php _e(ucwords($to_administrate), MMM_CLA_PLUGIN_TRANSLATE); ?>
                 </h2>
 
-                <form method="post" action="admin.php?page=<?php echo MMM_PLUGIN_ID_LONG_MINUS.'-'.$to_administrate; ?>"> 
+                <form method="post" action="admin.php?page=<?php echo MMM_CLA_PLUGIN_ID_LONG_MINUS.'-'.$to_administrate; ?>"> 
 					<?php 
-                    wp_nonce_field('handle_'.MMM_PLUGIN_ID_LONG, 'nonce_'.MMM_PLUGIN_ID_LONG); 
+                    wp_nonce_field('handle_'.MMM_CLA_PLUGIN_ID_LONG, 'nonce_'.MMM_CLA_PLUGIN_ID_LONG); 
 					$todo									= 	'';
                     if ($to_administrate == 'authorized')
 					{
 						$todo								= 	'delete-';
 						global $wpdb;
 						$query_to_run 						= 	"SELECT *
-																FROM {$wpdb->prefix}".MMM_PLUGIN_ID_SHORT."
+																FROM {$wpdb->prefix}".MMM_CLA_PLUGIN_ID_SHORT."
 																ORDER BY 
 																`date_time` DESC";
 						$plugin_results 					= 	$wpdb->get_results( $query_to_run );

@@ -6,7 +6,7 @@ class mmm_cla_frontend_widget
         global $wpdb;
 		$ip 									= 	mmm_cla_frontend_functions::get_ip();
 		$query_to_run 							= 	"SELECT *
-													FROM {$wpdb->prefix}".MMM_PLUGIN_ID_SHORT."
+													FROM {$wpdb->prefix}".MMM_CLA_PLUGIN_ID_SHORT."
 													WHERE 
 													ipaddress = '$ip'";
 		$widget_results 						= 	$wpdb->get_results( $query_to_run );
@@ -14,24 +14,24 @@ class mmm_cla_frontend_widget
 		if (!isset($widget_results) || (isset($widget_results) && is_array($widget_results) && count($widget_results) <= 0))
 		{
 			$defaults 							= 	mmm_cla_settings::default_values();
-			$values_db							= 	get_option( MMM_PLUGIN_ID_SHORT.'_settings', $defaults );
+			$values_db							= 	get_option( MMM_CLA_PLUGIN_ID_SHORT.'_settings', $defaults );
 			$values_field 						= 	wp_parse_args((array) $values_db, $defaults);
 
 			if ($values_field['general']['status'] == 1)
 			{
 				// load frontend styles
-				wp_enqueue_style( MMM_PLUGIN_ID_LONG_MINUS.'-frontend-styles', MMM_PLUGIN_URL . '/css/frontend/style.css', array(), MMM_PLUGIN_ID_SHORT_MINUS );
+				wp_enqueue_style( MMM_CLA_PLUGIN_ID_LONG_MINUS.'-frontend-styles', MMM_CLA_PLUGIN_URL . '/css/frontend/style.css', array(), MMM_CLA_PLUGIN_ID_SHORT_MINUS );
 				$layout_array					= 	array();
 				$layout_array					= 	array_merge($layout_array, array('layout_small' => $values_field['layout_small']), array('layout_large' => $values_field['layout_large']));
 				$parsed_layout					= 	mmm_cla_frontend_functions::parse_layout($layout_array);
-				wp_add_inline_style( MMM_PLUGIN_ID_LONG_MINUS.'-frontend-styles', $parsed_layout );
+				wp_add_inline_style( MMM_CLA_PLUGIN_ID_LONG_MINUS.'-frontend-styles', $parsed_layout );
 				
 				// load frontend scripts
-				wp_enqueue_script( MMM_PLUGIN_ID_LONG_MINUS.'-frontend-scripts-header', MMM_PLUGIN_URL . '/js/frontend/scripts-header.js', array( 'jquery' ), MMM_PLUGIN_ID_SHORT_MINUS, false );
-				wp_enqueue_script( MMM_PLUGIN_ID_LONG_MINUS.'-frontend-scripts-footer', MMM_PLUGIN_URL . '/js/frontend/scripts-footer.js', array( 'jquery' ), MMM_PLUGIN_ID_SHORT_MINUS, true );
+				wp_enqueue_script( MMM_CLA_PLUGIN_ID_LONG_MINUS.'-frontend-scripts-header', MMM_CLA_PLUGIN_URL . '/js/frontend/scripts-header.js', array( 'jquery' ), MMM_CLA_PLUGIN_ID_SHORT_MINUS, false );
+				wp_enqueue_script( MMM_CLA_PLUGIN_ID_LONG_MINUS.'-frontend-scripts-footer', MMM_CLA_PLUGIN_URL . '/js/frontend/scripts-footer.js', array( 'jquery' ), MMM_CLA_PLUGIN_ID_SHORT_MINUS, true );
 				// translate
 				$translated_for_js 				= array('small_pos_vertical' => $values_field['layout_small']['pos_vertical'], 'large_width' => $values_field['layout_large']['width']);
-				wp_localize_script( MMM_PLUGIN_ID_LONG_MINUS.'-frontend-scripts-header', 'translated_for_js', $translated_for_js );
+				wp_localize_script( MMM_CLA_PLUGIN_ID_LONG_MINUS.'-frontend-scripts-header', 'translated_for_js', $translated_for_js );
 				?>
 				<div id="cookie-tool-container-large">
                     <div class="cookie-tool-container-large-overlay"></div>

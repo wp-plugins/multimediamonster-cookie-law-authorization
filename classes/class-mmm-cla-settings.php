@@ -8,9 +8,9 @@ class mmm_cla_settings
 		
 		static function add_plugin_settings_link($actions, $file) 
 		{
-			if(false !== strpos($file, MMM_PLUGIN_ID_LONG_MINUS))
+			if(false !== strpos($file, MMM_CLA_PLUGIN_ID_LONG_MINUS))
 			{
-			 	$actions['settings']						= 	'<a href="admin.php?page='.MMM_PLUGIN_ID_LONG_MINUS.'">'.__('Settings', MMM_PLUGIN_TRANSLATE).'</a>';
+			 	$actions['settings']						= 	'<a href="admin.php?page='.MMM_CLA_PLUGIN_ID_LONG_MINUS.'">'.__('Settings', MMM_CLA_PLUGIN_TRANSLATE).'</a>';
 			}
 			return $actions; 
 		}
@@ -25,16 +25,16 @@ class mmm_cla_settings
 			$tabs											=	array();
 			if ($to_administrate == 'authorized')
 			{
-				$tabs['general']							=	__('General', MMM_PLUGIN_TRANSLATE);
+				$tabs['general']							=	__('General', MMM_CLA_PLUGIN_TRANSLATE);
 			}
 			if ($to_administrate == 'settings')
 			{
-				$tabs['general']							=	__('General', MMM_PLUGIN_TRANSLATE);
-				$tabs['levels']								=	__('Cookie levels', MMM_PLUGIN_TRANSLATE);
-				$tabs['texts']								=	__('Texts', MMM_PLUGIN_TRANSLATE);
-				$tabs['layout_small']						=	__('Layout small', MMM_PLUGIN_TRANSLATE);
-				$tabs['layout_large']						=	__('Layout large', MMM_PLUGIN_TRANSLATE);
-				$tabs['help']								=	__('Help', MMM_PLUGIN_TRANSLATE);
+				$tabs['general']							=	__('General', MMM_CLA_PLUGIN_TRANSLATE);
+				$tabs['levels']								=	__('Cookie levels', MMM_CLA_PLUGIN_TRANSLATE);
+				$tabs['texts']								=	__('Texts', MMM_CLA_PLUGIN_TRANSLATE);
+				$tabs['layout_small']						=	__('Layout small', MMM_CLA_PLUGIN_TRANSLATE);
+				$tabs['layout_large']						=	__('Layout large', MMM_CLA_PLUGIN_TRANSLATE);
+				$tabs['help']								=	__('Help', MMM_CLA_PLUGIN_TRANSLATE);
 			}
 			return $tabs;
 		}	
@@ -57,19 +57,19 @@ class mmm_cla_settings
 				(
 					1 					=> 	array
 											(
-												'label' 			=> 	__('Help', MMM_PLUGIN_TRANSLATE),
+												'label' 			=> 	__('Help', MMM_CLA_PLUGIN_TRANSLATE),
 												'type' 				=> 	'help', 
-												'text'	 			=> 	__('You just need to tell me: put it on or off? Nothing more. After that you can adjust settings, content and layout as you wish.', MMM_PLUGIN_TRANSLATE)
+												'text'	 			=> 	__('You just need to tell me: put it on or off? Nothing more. After that you can adjust settings, content and layout as you wish.', MMM_CLA_PLUGIN_TRANSLATE)
 											),
 					'status' 			=> 	array
 											(
-												'label' 			=> 	__('ON or OFF?<br /><span class="small">Are you kiddin? No I am not ...</span>', MMM_PLUGIN_TRANSLATE),
+												'label' 			=> 	__('ON or OFF?<br /><span class="small">Are you kiddin? No I am not ...</span>', MMM_CLA_PLUGIN_TRANSLATE),
 												'type' 				=> 	'radio', 
 												'required' 			=> 	true, 
 												'values'			=> 	array
 																		(
-																			1 	=>	__('ON', MMM_PLUGIN_TRANSLATE), 
-																			2 	=> 	__('OFF', MMM_PLUGIN_TRANSLATE)
+																			1 	=>	__('ON', MMM_CLA_PLUGIN_TRANSLATE), 
+																			2 	=> 	__('OFF', MMM_CLA_PLUGIN_TRANSLATE)
 																		)
 											)
 				);
@@ -83,13 +83,13 @@ class mmm_cla_settings
 				(
 					1 					=> 	array
 											(
-												'label' 			=> 	__('Help', MMM_PLUGIN_TRANSLATE),
+												'label' 			=> 	__('Help', MMM_CLA_PLUGIN_TRANSLATE),
 												'type' 				=> 	'help', 
-												'text'	 			=> 	__('<div class="hidden_ajax"></div>Basicly there are 3 levels, but you can add more or remove the existing levels. Click <a href="javascript:void(0);" class="ajax duplicate" title="levels1 duplicate">here</a> to add more.', MMM_PLUGIN_TRANSLATE)
+												'text'	 			=> 	__('<div class="hidden_ajax"></div>Basicly there are 3 levels, but you can add more or remove the existing levels. Click <a href="javascript:void(0);" class="ajax duplicate" title="levels1 duplicate">here</a> to add more.', MMM_CLA_PLUGIN_TRANSLATE)
 											),
 					'levels' 			=> 	array
 											(
-												'label' 			=> 	__('Levels', MMM_PLUGIN_TRANSLATE),
+												'label' 			=> 	__('Levels', MMM_CLA_PLUGIN_TRANSLATE),
 												'type' 				=> 	'levels',  
 												'required' 			=> 	true, 
 												'values'			=> 	array
@@ -98,18 +98,18 @@ class mmm_cla_settings
 																					(
 																						'title' 	=> 	array
 																										(
-																											'label' 	=> 	__('Level title', MMM_PLUGIN_TRANSLATE), 
+																											'label' 	=> 	__('Level title', MMM_CLA_PLUGIN_TRANSLATE), 
 																											'type' 		=> 	'text',
 																											'required' 	=> 	true
 																										), 
 																						'dos' 		=> 	array
 																										(
-																											'label' 	=> 	__('Level do&#8217;s', MMM_PLUGIN_TRANSLATE), 
+																											'label' 	=> 	__('Level do&#8217;s', MMM_CLA_PLUGIN_TRANSLATE), 
 																											'type' 		=> 	'textarea'
 																										), 
 																						'donts' 	=> 	array
 																										(
-																											'label' 	=> 	__('Level dont&#8217;s', MMM_PLUGIN_TRANSLATE), 
+																											'label' 	=> 	__('Level dont&#8217;s', MMM_CLA_PLUGIN_TRANSLATE), 
 																											'type' 		=> 	'textarea'
 																										)
 																					),
@@ -117,18 +117,18 @@ class mmm_cla_settings
 																					(
 																						'title' 	=> 	array
 																										(
-																											'label' 	=> 	__('Level title', MMM_PLUGIN_TRANSLATE), 
+																											'label' 	=> 	__('Level title', MMM_CLA_PLUGIN_TRANSLATE), 
 																											'type' 		=> 	'text',
 																											'required' 	=> 	true
 																										), 
 																						'dos' 		=> 	array
 																										(
-																											'label' 	=> 	__('Level do&#8217;s', MMM_PLUGIN_TRANSLATE), 
+																											'label' 	=> 	__('Level do&#8217;s', MMM_CLA_PLUGIN_TRANSLATE), 
 																											'type' 		=> 	'textarea'
 																										), 
 																						'donts' 	=> 	array
 																										(
-																											'label' 	=> 	__('Level dont&#8217;s', MMM_PLUGIN_TRANSLATE), 
+																											'label' 	=> 	__('Level dont&#8217;s', MMM_CLA_PLUGIN_TRANSLATE), 
 																											'type' 		=> 	'textarea'
 																										)
 																					),
@@ -136,18 +136,18 @@ class mmm_cla_settings
 																					(
 																						'title' 	=> 	array
 																										(
-																											'label' 	=> 	__('Level title', MMM_PLUGIN_TRANSLATE), 
+																											'label' 	=> 	__('Level title', MMM_CLA_PLUGIN_TRANSLATE), 
 																											'type' 		=> 	'text',
 																											'required' 	=> 	true
 																										), 
 																						'dos' 		=> 	array
 																										(
-																											'label' 	=> 	__('Level do&#8217;s', MMM_PLUGIN_TRANSLATE), 
+																											'label' 	=> 	__('Level do&#8217;s', MMM_CLA_PLUGIN_TRANSLATE), 
 																											'type' 		=> 	'textarea'
 																										), 
 																						'donts' 	=> 	array
 																										(
-																											'label' 	=> 	__('Level dont&#8217;s', MMM_PLUGIN_TRANSLATE), 
+																											'label' 	=> 	__('Level dont&#8217;s', MMM_CLA_PLUGIN_TRANSLATE), 
 																											'type' 		=> 	'textarea'
 																										)
 																					)
@@ -164,74 +164,74 @@ class mmm_cla_settings
 				(
 					1 					=> 	array
 											(
-												'label' 			=> 	__('Help', MMM_PLUGIN_TRANSLATE),
+												'label' 			=> 	__('Help', MMM_CLA_PLUGIN_TRANSLATE),
 												'type' 				=> 	'help', 
-												'text'	 			=> 	__('If you are not sure which texts belong to which elements (please first check the small text in front of the inputs) look on the &#8217;help&#8217; tab.', MMM_PLUGIN_TRANSLATE)
+												'text'	 			=> 	__('If you are not sure which texts belong to which elements (please first check the small text in front of the inputs) look on the &#8217;help&#8217; tab.', MMM_CLA_PLUGIN_TRANSLATE)
 											),
 					'small_title' 		=> 	array
 											(
-												'label' 			=> 	__('Title small block', MMM_PLUGIN_TRANSLATE),
+												'label' 			=> 	__('Title small block', MMM_CLA_PLUGIN_TRANSLATE),
 												'type' 				=> 	'text',
 												'required' 			=> 	true
 											),
 					'small_text' 		=> 	array
 											(
-												'label' 			=> 	__('Text small block', MMM_PLUGIN_TRANSLATE),
+												'label' 			=> 	__('Text small block', MMM_CLA_PLUGIN_TRANSLATE),
 												'type'				=> 	'textarea',
 												'required' 			=> 	true
 											),
 					'small_button' 		=> 	array
 											(
-												'label' 			=> 	__('Button small block', MMM_PLUGIN_TRANSLATE),
+												'label' 			=> 	__('Button small block', MMM_CLA_PLUGIN_TRANSLATE),
 												'type'				=> 	'text',
 												'required' 			=> 	true
 											),
 					'small_link' 		=> 	array
 											(
-												'label' 			=> 	__('Link small block<br /><span class="small">if left blank there will be no more information</span>', MMM_PLUGIN_TRANSLATE),
+												'label' 			=> 	__('Link small block<br /><span class="small">if left blank there will be no more information</span>', MMM_CLA_PLUGIN_TRANSLATE),
 												'type' 				=> 	'text',
 												'required' 			=> 	true
 											),
 					
 					'large_title' 		=> 	array
 											(
-												'label' 			=> 	__('Title large block', MMM_PLUGIN_TRANSLATE),
+												'label' 			=> 	__('Title large block', MMM_CLA_PLUGIN_TRANSLATE),
 												'type' 				=> 	'text',
 												'required' 			=> 	true
 											),
 					'large_text' 		=> 	array
 											(
-												'label' 			=>	__('Text large block', MMM_PLUGIN_TRANSLATE),
+												'label' 			=>	__('Text large block', MMM_CLA_PLUGIN_TRANSLATE),
 												'type'				=> 	'textarea',
 												'required' 			=> 	true 
 											),
 					'large_wanted' 		=> 	array
 											(
-												'label' 			=> 	__('Title large wanted', MMM_PLUGIN_TRANSLATE),
+												'label' 			=> 	__('Title large wanted', MMM_CLA_PLUGIN_TRANSLATE),
 												'type' 				=> 	'text',
 												'required' 			=> 	true
 											),
 					'large_recommended' => 	array
 											(
-												'label' 			=> 	__('Title large recommended', MMM_PLUGIN_TRANSLATE),
+												'label' 			=> 	__('Title large recommended', MMM_CLA_PLUGIN_TRANSLATE),
 												'type' 				=> 	'text',
 												'required' 			=> 	true
 											),
 					'large_do' 			=> 	array
 											(
-												'label' 			=> 	__('Title large do&#8217;s', MMM_PLUGIN_TRANSLATE),
+												'label' 			=> 	__('Title large do&#8217;s', MMM_CLA_PLUGIN_TRANSLATE),
 												'type' 				=> 	'text',
 												'required' 			=> 	true
 											),
 					'large_dont' 		=> 	array
 											(
-												'label' 			=> 	__('Title large dont&#8217;s', MMM_PLUGIN_TRANSLATE),
+												'label' 			=> 	__('Title large dont&#8217;s', MMM_CLA_PLUGIN_TRANSLATE),
 												'type' 				=> 	'text',
 												'required' 			=> 	true 
 											),
 					'large_button' 		=> 	array
 											(
-												'label' 			=> 	__('Button large block', MMM_PLUGIN_TRANSLATE),
+												'label' 			=> 	__('Button large block', MMM_CLA_PLUGIN_TRANSLATE),
 												'type'				=> 	'text',
 												'required' 			=> 	true 
 											)
@@ -246,107 +246,107 @@ class mmm_cla_settings
 				(
 					1 							=> 	array
 												(
-													'label' 			=> 	__('Help', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Help', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'help', 
-													'text'	 			=> 	__('Below you can adjust some basic layout settings for the small block on the website. But ofcourse there is more you can do about making the apearance fit more with you own website. You can do this by styling the elements in your theme&#8217;s CSS file. On the &#8217;help&#8217; tab on this page I have put an example on what elements are used. Good luck! You can do it!', MMM_PLUGIN_TRANSLATE)
+													'text'	 			=> 	__('Below you can adjust some basic layout settings for the small block on the website. But ofcourse there is more you can do about making the apearance fit more with you own website. You can do this by styling the elements in your theme&#8217;s CSS file. On the &#8217;help&#8217; tab on this page I have put an example on what elements are used. Good luck! You can do it!', MMM_CLA_PLUGIN_TRANSLATE)
 												),
 					'floating' 					=> 	array
 												(
-													'label' 			=> 	__('Floating', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Floating', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'radio',
 													'required' 			=> 	true,
 													'values'	 		=> 	array
 																			(
-																				1 	=>	__('yes', MMM_PLUGIN_TRANSLATE), 
-																				2 	=> 	__('no', MMM_PLUGIN_TRANSLATE)
+																				1 	=>	__('yes', MMM_CLA_PLUGIN_TRANSLATE), 
+																				2 	=> 	__('no', MMM_CLA_PLUGIN_TRANSLATE)
 																			)
 												),
 					'draggable' 				=> 	array
 												(
-													'label' 			=> 	__('Draggable', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Draggable', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'radio', 
 													'required' 			=> 	true,
 													'values'	 		=> 	array
 																			(
-																				1 	=>	__('yes', MMM_PLUGIN_TRANSLATE), 
-																				2 	=> 	__('no', MMM_PLUGIN_TRANSLATE)
+																				1 	=>	__('yes', MMM_CLA_PLUGIN_TRANSLATE), 
+																				2 	=> 	__('no', MMM_CLA_PLUGIN_TRANSLATE)
 																			)
 												),
 					'pos_horizontal' 			=> 	array
 												(
-													'label' 			=> 	__('Position horizontal', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Position horizontal', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'radio', 
 													'required' 			=> 	true,
 													'values'	 		=> 	array
 																			(
-																				1 	=>	__('left', MMM_PLUGIN_TRANSLATE), 
-																				2 	=> 	__('right', MMM_PLUGIN_TRANSLATE)
+																				1 	=>	__('left', MMM_CLA_PLUGIN_TRANSLATE), 
+																				2 	=> 	__('right', MMM_CLA_PLUGIN_TRANSLATE)
 																			)
 												),
 					'pos_vertical' 				=> 	array
 												(
-													'label' 			=> 	__('Position vertical', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Position vertical', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'radio', 
 													'required' 			=> 	true,
 													'values'	 		=> 	array
 																			(
-																				1 	=>	__('top', MMM_PLUGIN_TRANSLATE), 
-																				2 	=> 	__('bottom', MMM_PLUGIN_TRANSLATE)
+																				1 	=>	__('top', MMM_CLA_PLUGIN_TRANSLATE), 
+																				2 	=> 	__('bottom', MMM_CLA_PLUGIN_TRANSLATE)
 																			)
 												),
 					'width' 					=> 	array
 												(
-													'label' 			=> 	__('Width<br /><span class="small">in pixels, if left empty it will be 100%<br />(fe "350", "350px", "50%")</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Width<br /><span class="small">in pixels, if left empty it will be 100%<br />(fe "350", "350px", "50%")</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'borderradius' 				=> 	array
 												(
-													'label' 			=> 	__('Border radius<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "10", "10px", "10px 10px 10px 10px")</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Border radius<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "10", "10px", "10px 10px 10px 10px")</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'dropshadow' 				=> 	array
 												(
-													'label' 			=> 	__('Drop shadow<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "10", "10px", "10px 10px 10px 10px")</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Drop shadow<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "10", "10px", "10px 10px 10px 10px")</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'outer_backgroundcolor' 	=> 	array
 												(
-													'label' 			=> 	__('Backgroundcolor (outer)<br /><span class="small">in hex #, if left empty it will be #f4f4f4<br />(fe #000)</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Backgroundcolor (outer)<br /><span class="small">in hex #, if left empty it will be #f4f4f4<br />(fe #000)</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'color'
 												),
 					'outer_backgroundopacity'	 => 	array
 												(
-													'label' 			=> 	__('Backgroundopacity (outer)<br /><span class="small">in %, if left empty it will be 100%<br />(fe 50)</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Backgroundopacity (outer)<br /><span class="small">in %, if left empty it will be 100%<br />(fe 50)</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'outer_margin' 				=> 	array
 												(
-													'label' 			=> 	__('Margin (outer)<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "25", "25px", "25px 25px 25px 25px")</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Margin (outer)<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "25", "25px", "25px 25px 25px 25px")</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'outer_padding' 			=> 	array
 												(
-													'label' 			=> 	__('Padding (outer)<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "25", "25px", "25px 25px 25px 25px")</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Padding (outer)<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "25", "25px", "25px 25px 25px 25px")</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'inner_backgroundcolor' 	=> 	array
 												(
-													'label' 			=> 	__('Backgroundcolor (inner)<br /><span class="small">in hex #, if left empty it will be #fff<br />(fe #000)</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Backgroundcolor (inner)<br /><span class="small">in hex #, if left empty it will be #fff<br />(fe #000)</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'color'
 												),
 					'inner_backgroundopacity' 	=> 	array
 												(
-													'label' 			=> 	__('Backgroundopacity (inner)<br /><span class="small">in %, if left empty it will be 100%<br />(fe 50)</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Backgroundopacity (inner)<br /><span class="small">in %, if left empty it will be 100%<br />(fe 50)</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'inner_margin' 				=> 	array
 												(
-													'label' 			=> 	__('Margin (inner)<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "10", "10px", "10px 10px 10px 10px")</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Margin (inner)<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "10", "10px", "10px 10px 10px 10px")</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'inner_padding' 			=> 	array
 												(
-													'label' 			=> 	__('Padding (inner)<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "25", "25px", "25px 25px 25px 25px")</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Padding (inner)<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "25", "25px", "25px 25px 25px 25px")</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												)
 				);
@@ -355,73 +355,73 @@ class mmm_cla_settings
 				(
 					1 							=> 	array
 												(
-													'label' 			=> 	__('Help', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Help', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'help', 
-													'text'	 			=> 	__('Below you can adjust some basic layout settings for the large block on the website. But ofcourse there is more you can do about making the apearance fit more with you own website. You can do this by styling the elements in your theme&#8217;s CSS file. On the &#8217;help&#8217; tab on this page I have put an example on what elements are used. Good luck! You can do it!', MMM_PLUGIN_TRANSLATE)
+													'text'	 			=> 	__('Below you can adjust some basic layout settings for the large block on the website. But ofcourse there is more you can do about making the apearance fit more with you own website. You can do this by styling the elements in your theme&#8217;s CSS file. On the &#8217;help&#8217; tab on this page I have put an example on what elements are used. Good luck! You can do it!', MMM_CLA_PLUGIN_TRANSLATE)
 												),
 					'width' 					=> 	array
 												(
-													'label' 			=> 	__('Width<br /><span class="small">in pixels, if left empty it will be 100%<br />(fe 250, 250px, 50%)</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Width<br /><span class="small">in pixels, if left empty it will be 100%<br />(fe 250, 250px, 50%)</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'overlay_backgroundcolor' 	=> 	array
 												(
-													'label' 			=> 	__('Backgroundcolor (overlay)<br /><span class="small">in hex #, if left empty it will be #000<br />(fe #000)</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Backgroundcolor (overlay)<br /><span class="small">in hex #, if left empty it will be #000<br />(fe #000)</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'color'
 												),
 					'overlay_backgroundopacity'	 => 	array
 												(
-													'label' 			=> 	__('Backgroundopacity (overlay)<br /><span class="small">in %, if left empty it will be 80%<br />(fe 50)</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Backgroundopacity (overlay)<br /><span class="small">in %, if left empty it will be 80%<br />(fe 50)</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'borderradius' 				=> 	array
 												(
-													'label' 			=> 	__('Border radius<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "10", "10px", "10px 10px 10px 10px")</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Border radius<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "10", "10px", "10px 10px 10px 10px")</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'dropshadow' 				=> 	array
 												(
-													'label' 			=> 	__('Drop shadow<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "10", "10px", "10px 10px 10px 10px")</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Drop shadow<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "10", "10px", "10px 10px 10px 10px")</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'outer_backgroundcolor' 	=> 	array
 												(
-													'label' 			=> 	__('Backgroundcolor (outer)<br /><span class="small">in hex #, if left empty it will be #f4f4f4<br />(fe #000)</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Backgroundcolor (outer)<br /><span class="small">in hex #, if left empty it will be #f4f4f4<br />(fe #000)</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'color'
 												),
 					'outer_backgroundopacity'	 => 	array
 												(
-													'label' 			=> 	__('Backgroundopacity (outer)<br /><span class="small">in %, if left empty it will be 100%<br />(fe 50)</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Backgroundopacity (outer)<br /><span class="small">in %, if left empty it will be 100%<br />(fe 50)</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'outer_margin' 				=> 	array
 												(
-													'label' 			=> 	__('Margin (outer)<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "25", "25px", "25px 25px 25px 25px")</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Margin (outer)<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "25", "25px", "25px 25px 25px 25px")</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'outer_padding' 			=> 	array
 												(
-													'label' 			=> 	__('Padding (outer)<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "25", "25px", "25px 25px 25px 25px")</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Padding (outer)<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "25", "25px", "25px 25px 25px 25px")</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'inner_backgroundcolor' 	=> 	array
 												(
-													'label' 			=> 	__('Backgroundcolor (inner)<br /><span class="small">in hex #, if left empty it will be #fff<br />(fe #000)</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Backgroundcolor (inner)<br /><span class="small">in hex #, if left empty it will be #fff<br />(fe #000)</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'color'
 												),
 					'inner_backgroundopacity' 	=> 	array
 												(
-													'label' 			=> 	__('Backgroundopacity (inner)<br /><span class="small">in %, if left empty it will be 100%<br />(fe 50)</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Backgroundopacity (inner)<br /><span class="small">in %, if left empty it will be 100%<br />(fe 50)</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'inner_margin' 				=> 	array
 												(
-													'label' 			=> 	__('Margin (inner)<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "10", "10px", "10px 10px 10px 10px")</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Margin (inner)<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "10", "10px", "10px 10px 10px 10px")</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												),
 					'inner_padding' 			=> 	array
 												(
-													'label' 			=> 	__('Padding (inner)<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "25", "25px", "25px 25px 25px 25px")</span>', MMM_PLUGIN_TRANSLATE),
+													'label' 			=> 	__('Padding (inner)<br /><span class="small">in pixels, if left empty it will be 0<br />(fe "25", "25px", "25px 25px 25px 25px")</span>', MMM_CLA_PLUGIN_TRANSLATE),
 													'type' 				=> 	'text'
 												)
 				);
@@ -448,24 +448,24 @@ class mmm_cla_settings
 			
 			$defaults['levels']				= 	array
 												(
-													'title1'					=> 	__('Reccomended', MMM_PLUGIN_TRANSLATE),
-													'dos1'						=> 	__('Placing necessary cookies (remembering basic settings)<br />Keep track of statistics<br />Allow pages to share through social media<br />Use visitor information for relevant advertising', MMM_PLUGIN_TRANSLATE),
+													'title1'					=> 	__('Reccomended', MMM_CLA_PLUGIN_TRANSLATE),
+													'dos1'						=> 	__('Placing necessary cookies (remembering basic settings)<br />Keep track of statistics<br />Allow pages to share through social media<br />Use visitor information for relevant advertising', MMM_CLA_PLUGIN_TRANSLATE),
 													'donts1' 					=> 	'',
-													'title2' 					=> 	__('Functional', MMM_PLUGIN_TRANSLATE),
-													'dos2' 						=> 	__('Placing necessary cookies (remembering basic settings)<br />Keep track of statistics<br />Allow pages to share through social media', MMM_PLUGIN_TRANSLATE),
-													'donts2' 					=>	__('Use visitor information for relevant advertising', MMM_PLUGIN_TRANSLATE),
-													'title3' 					=> 	__('Necessary', MMM_PLUGIN_TRANSLATE),
-													'dos3' 						=> 	__('Placing necessary cookies (remembering basic settings)', MMM_PLUGIN_TRANSLATE),
-													'donts3'					=> 	__('Keep track of statistics<br />Allow pages to share through social media<br />Use visitor information for relevant advertising', MMM_PLUGIN_TRANSLATE)
+													'title2' 					=> 	__('Functional', MMM_CLA_PLUGIN_TRANSLATE),
+													'dos2' 						=> 	__('Placing necessary cookies (remembering basic settings)<br />Keep track of statistics<br />Allow pages to share through social media', MMM_CLA_PLUGIN_TRANSLATE),
+													'donts2' 					=>	__('Use visitor information for relevant advertising', MMM_CLA_PLUGIN_TRANSLATE),
+													'title3' 					=> 	__('Necessary', MMM_CLA_PLUGIN_TRANSLATE),
+													'dos3' 						=> 	__('Placing necessary cookies (remembering basic settings)', MMM_CLA_PLUGIN_TRANSLATE),
+													'donts3'					=> 	__('Keep track of statistics<br />Allow pages to share through social media<br />Use visitor information for relevant advertising', MMM_CLA_PLUGIN_TRANSLATE)
 												);
 			
 			$defaults['texts'] 				= 	array
 												(
-													'small_title' 				=> 	__('Cookie settings', MMM_PLUGIN_TRANSLATE),
-													'small_text'				=> 	__('We use cookies to ensure you get the best experience on our website.', MMM_PLUGIN_TRANSLATE),
-													'small_button' 				=> 	__('Accept cookies', MMM_PLUGIN_TRANSLATE),
-													'small_link'				=> 	__('Information', MMM_PLUGIN_TRANSLATE),
-													'large_title' 				=>	__('Cookie settings', MMM_PLUGIN_TRANSLATE),
+													'small_title' 				=> 	__('Cookie settings', MMM_CLA_PLUGIN_TRANSLATE),
+													'small_text'				=> 	__('We use cookies to ensure you get the best experience on our website.', MMM_CLA_PLUGIN_TRANSLATE),
+													'small_button' 				=> 	__('Accept cookies', MMM_CLA_PLUGIN_TRANSLATE),
+													'small_link'				=> 	__('Information', MMM_CLA_PLUGIN_TRANSLATE),
+													'large_title' 				=>	__('Cookie settings', MMM_CLA_PLUGIN_TRANSLATE),
 													'large_text'				=> 	__('Most websites you visit will use cookies in order to improve your user experience by enabling that website to ‘remember’ you.
 																						<br /><br />Cookies do lots of different jobs, like letting you navigate between pages efficiently, storing your preferences, and generally improving your experience of a website. Cookies make the interaction between you and the website faster and easier. If a website doesn’t use cookies, it will think you are a new visitor every time you move to a new page on the site – for example, when you enter your login details and move to another page it won’t recognise you and it won’t be able to keep you logged in.
 																						<br /><br />Some websites will also use cookies to enable them to target their advertising or marketing messages based for example, on your location and/or browsing habits.
@@ -473,12 +473,12 @@ class mmm_cla_settings
 																						<br /><br />What is in a cookie?
 																						<br /><br />A cookie is a simple text file that is stored on your computer or mobile device by a website’s server and only that server will be able to retrieve or read the contents of that cookie. Each cookie is unique to your web browser. It will contain some anonymous information such as a unique identifier and the site name and some digits and numbers. It allows a website to remember things like your preferences or what’s in your shopping basket.
 																						<br /><br />What to do if you don’t want cookies to be set
-																						<br /><br />Some people find the idea of a website storing information on their computer or mobile device a bit intrusive, particularly when this information is stored and used by a third party without them knowing. Although this is generally quite harmless you may not, for example, want to see advertising that has been targeted to your interests. If you prefer, it is possible to block some or all cookies, or even to delete cookies that have already been set; but you need to be aware that you might lose some functions of that website.', MMM_PLUGIN_TRANSLATE),
-													'large_wanted'				=> 	__('Wanted', MMM_PLUGIN_TRANSLATE),
-													'large_recommended' 		=> 	__('Recommended', MMM_PLUGIN_TRANSLATE),
-													'large_do' 					=> 	__('This website will:', MMM_PLUGIN_TRANSLATE),
-													'large_dont' 				=> 	__('This website won&#8217;t:', MMM_PLUGIN_TRANSLATE),
-													'large_button'				=> 	__('Save', MMM_PLUGIN_TRANSLATE)
+																						<br /><br />Some people find the idea of a website storing information on their computer or mobile device a bit intrusive, particularly when this information is stored and used by a third party without them knowing. Although this is generally quite harmless you may not, for example, want to see advertising that has been targeted to your interests. If you prefer, it is possible to block some or all cookies, or even to delete cookies that have already been set; but you need to be aware that you might lose some functions of that website.', MMM_CLA_PLUGIN_TRANSLATE),
+													'large_wanted'				=> 	__('Wanted', MMM_CLA_PLUGIN_TRANSLATE),
+													'large_recommended' 		=> 	__('Recommended', MMM_CLA_PLUGIN_TRANSLATE),
+													'large_do' 					=> 	__('This website will:', MMM_CLA_PLUGIN_TRANSLATE),
+													'large_dont' 				=> 	__('This website won&#8217;t:', MMM_CLA_PLUGIN_TRANSLATE),
+													'large_button'				=> 	__('Save', MMM_CLA_PLUGIN_TRANSLATE)
 												);
 			$defaults['layout_small'] 		= 	array
 												(
@@ -561,7 +561,7 @@ class mmm_cla_settings
 			
 			// the values
 			$defaults 							= 	self::default_values();
-			$values_db							= 	get_option( MMM_PLUGIN_ID_SHORT.'_settings', $defaults );
+			$values_db							= 	get_option( MMM_CLA_PLUGIN_ID_SHORT.'_settings', $defaults );
 			$values_field 						= 	wp_parse_args((array) $values_db, $defaults);
 			
 			$value_field						= 	'';
@@ -586,8 +586,8 @@ class mmm_cla_settings
 			}
 			if ($field_name_id != "0" && $options['tab'] != $field_name_id)
 			{
-				$field_id						=	MMM_PLUGIN_ID_SHORT.'_'.$options['to_administrate'].'_'.$options['tab'].'_'.$field_name_id;
-				$field_name						=	MMM_PLUGIN_ID_SHORT.'_'.$options['to_administrate'].'['.$options['tab'].']['.$field_name_id.']';
+				$field_id						=	MMM_CLA_PLUGIN_ID_SHORT.'_'.$options['to_administrate'].'_'.$options['tab'].'_'.$field_name_id;
+				$field_name						=	MMM_CLA_PLUGIN_ID_SHORT.'_'.$options['to_administrate'].'['.$options['tab'].']['.$field_name_id.']';
 			}
 			?>
             <fieldset<?php echo $fieldset_class; ?>>
@@ -699,12 +699,12 @@ class mmm_cla_settings
 							<div class="input <?php echo $type; ?> <?php echo $type.$values_key; ?> duplicate">
 								<b>
 									<?php echo $type.' '.$values_key; ?>
-                                    <a href="javascript:void(0);" class="slide <?php echo $type.$values_key; ?>"><?php _e('slide down', MMM_PLUGIN_TRANSLATE); ?></a> 
+                                    <a href="javascript:void(0);" class="slide <?php echo $type.$values_key; ?>"><?php _e('slide down', MMM_CLA_PLUGIN_TRANSLATE); ?></a> 
                                     <?php
 									if ($values_key > 3)
 									{
 										?>
-                                    	<a href="javascript:void(0);" class="remove <?php echo $type.$values_key; ?>"><?php _e('remove', MMM_PLUGIN_TRANSLATE); ?></a>
+                                    	<a href="javascript:void(0);" class="remove <?php echo $type.$values_key; ?>"><?php _e('remove', MMM_CLA_PLUGIN_TRANSLATE); ?></a>
                                 		<?
 									}
 									?>

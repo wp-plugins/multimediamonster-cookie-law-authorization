@@ -72,21 +72,21 @@ class mmm_cla_admin_functions
 		{			
 			$to_return								= '';
 			
-			$texts['ipaddress'] 					= __('ipaddress', MMM_PLUGIN_TRANSLATE);
-			$texts['date_time'] 					= __('date_time', MMM_PLUGIN_TRANSLATE);
-			$texts['level'] 						= __('level', MMM_PLUGIN_TRANSLATE);
+			$texts['ipaddress'] 					= __('ipaddress', MMM_CLA_PLUGIN_TRANSLATE);
+			$texts['date_time'] 					= __('date_time', MMM_CLA_PLUGIN_TRANSLATE);
+			$texts['level'] 						= __('level', MMM_CLA_PLUGIN_TRANSLATE);
 			
-			$texts['plugin_id_short'] 				= MMM_PLUGIN_ID_SHORT;
-			$texts['plugin_id_short_minus'] 		= MMM_PLUGIN_ID_SHORT_MINUS;
-			$texts['plugin_id_long'] 				= MMM_PLUGIN_ID_LONG;
-			$texts['plugin_id_long_minus'] 			= MMM_PLUGIN_ID_LONG_MINUS;
-			$texts['plugin_url'] 					= MMM_PLUGIN_URL;
-			$texts['confirm_delete_authorized'] 	= __('Really delete this IP address? (Irreversible)', MMM_PLUGIN_TRANSLATE);
-			$texts['confirm_reset'] 				= __('Are you sure you want to reset? The widget will be disabled and all configuration and layout settings will be permanently deleted. (Irreversible)', MMM_PLUGIN_TRANSLATE);
-			$texts['max_level_elements'] 			= __('You have reached the maximum number of levels to add.', MMM_PLUGIN_TRANSLATE);
-			$texts['slide_up'] 						= __('slide up', MMM_PLUGIN_TRANSLATE);
-			$texts['slide_down']					= __('slide down', MMM_PLUGIN_TRANSLATE);
-			$texts['remove'] 						= __('remove', MMM_PLUGIN_TRANSLATE);
+			$texts['plugin_id_short'] 				= MMM_CLA_PLUGIN_ID_SHORT;
+			$texts['plugin_id_short_minus'] 		= MMM_CLA_PLUGIN_ID_SHORT_MINUS;
+			$texts['plugin_id_long'] 				= MMM_CLA_PLUGIN_ID_LONG;
+			$texts['plugin_id_long_minus'] 			= MMM_CLA_PLUGIN_ID_LONG_MINUS;
+			$texts['plugin_url'] 					= MMM_CLA_PLUGIN_URL;
+			$texts['confirm_delete_authorized'] 	= __('Really delete this IP address? (Irreversible)', MMM_CLA_PLUGIN_TRANSLATE);
+			$texts['confirm_reset'] 				= __('Are you sure you want to reset? The widget will be disabled and all configuration and layout settings will be permanently deleted. (Irreversible)', MMM_CLA_PLUGIN_TRANSLATE);
+			$texts['max_level_elements'] 			= __('You have reached the maximum number of levels to add.', MMM_CLA_PLUGIN_TRANSLATE);
+			$texts['slide_up'] 						= __('slide up', MMM_CLA_PLUGIN_TRANSLATE);
+			$texts['slide_down']					= __('slide down', MMM_CLA_PLUGIN_TRANSLATE);
+			$texts['remove'] 						= __('remove', MMM_CLA_PLUGIN_TRANSLATE);
 			if (!$return)
 			{
 				$to_return 							= $texts;
@@ -105,18 +105,18 @@ class mmm_cla_admin_functions
 		{
 			$array_months 		
 									= array(
-									"01" 		=> __ ("January", MMM_PLUGIN_TRANSLATE),
-									"02" 		=> __ ("Februari", MMM_PLUGIN_TRANSLATE),
-									"03" 		=> __ ("March", MMM_PLUGIN_TRANSLATE),
-									"04" 		=> __ ("April", MMM_PLUGIN_TRANSLATE),
-									"05" 		=> __ ("May", MMM_PLUGIN_TRANSLATE),
-									"06" 		=> __ ("June", MMM_PLUGIN_TRANSLATE),
-									"07" 		=> __ ("July", MMM_PLUGIN_TRANSLATE),
-									"08" 		=> __ ("August", MMM_PLUGIN_TRANSLATE),
-									"09" 		=> __ ("September", MMM_PLUGIN_TRANSLATE),
-									"10" 		=> __ ("October", MMM_PLUGIN_TRANSLATE),
-									"11" 		=> __ ("November", MMM_PLUGIN_TRANSLATE),
-									"12" 		=> __ ("December", MMM_PLUGIN_TRANSLATE)
+									"01" 		=> __ ("January", MMM_CLA_PLUGIN_TRANSLATE),
+									"02" 		=> __ ("Februari", MMM_CLA_PLUGIN_TRANSLATE),
+									"03" 		=> __ ("March", MMM_CLA_PLUGIN_TRANSLATE),
+									"04" 		=> __ ("April", MMM_CLA_PLUGIN_TRANSLATE),
+									"05" 		=> __ ("May", MMM_CLA_PLUGIN_TRANSLATE),
+									"06" 		=> __ ("June", MMM_CLA_PLUGIN_TRANSLATE),
+									"07" 		=> __ ("July", MMM_CLA_PLUGIN_TRANSLATE),
+									"08" 		=> __ ("August", MMM_CLA_PLUGIN_TRANSLATE),
+									"09" 		=> __ ("September", MMM_CLA_PLUGIN_TRANSLATE),
+									"10" 		=> __ ("October", MMM_CLA_PLUGIN_TRANSLATE),
+									"11" 		=> __ ("November", MMM_CLA_PLUGIN_TRANSLATE),
+									"12" 		=> __ ("December", MMM_CLA_PLUGIN_TRANSLATE)
 									);
 			return ($array_months[$input]);
 		}
