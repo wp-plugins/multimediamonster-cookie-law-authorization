@@ -10,7 +10,7 @@ class mmm_cla_settings
 		{
 			if(false !== strpos($file, MMM_CLA_PLUGIN_ID_LONG_MINUS))
 			{
-			 	$actions['settings']						= 	'<a href="admin.php?page='.MMM_CLA_PLUGIN_ID_LONG_MINUS.'">'.__('Settings', MMM_CLA_PLUGIN_TRANSLATE).'</a>';
+			 	$actions['settings']						= 	'<a href="admin.php?page='.MMM_CLA_PLUGIN_ID_LONG_MINUS.'-settings">'.__('Settings', MMM_CLA_PLUGIN_TRANSLATE).'</a>';
 			}
 			return $actions; 
 		}
