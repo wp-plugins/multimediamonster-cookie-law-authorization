@@ -3,7 +3,7 @@ class mmm_cla_admin_actions
 {
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	CUSTOM RESPONSE MESSAGES AFTER REDIRECT
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	// ---------------------------------------------------------------------------------------------------------------------
 		
 		static function custom_admin_messages_show($message = null, $class = 'updated')
@@ -42,7 +42,7 @@ class mmm_cla_admin_actions
 		
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	CUSTOM ADMIN ACTIONS
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	// ---------------------------------------------------------------------------------------------------------------------
 		
 		static function custom_admin_actions($handled_by = '') 
@@ -54,7 +54,7 @@ class mmm_cla_admin_actions
 			
 			// ---------------------------------------------------------------------------------------------------------------------
 			// 	THE ACTUAL DO
-			// 	@since									MultiMediaMonster 1.1
+			// 	@since									MultiMediaMonster
 			// ---------------------------------------------------------------------------------------------------------------------
 			
 				$redirect_error										= 	0;
@@ -68,7 +68,7 @@ class mmm_cla_admin_actions
 					{
 						// ---------------------------------------------------------------------------------------------------------------------
 						// 	EDIT SETTINGS
-						// 	@since									MultiMediaMonster 1.1
+						// 	@since									MultiMediaMonster
 						// ---------------------------------------------------------------------------------------------------------------------
 							
 							if (isset($_POST['todo']) && $_POST['todo'] == 'edit-settings')
@@ -139,7 +139,7 @@ class mmm_cla_admin_actions
 							
 						// ---------------------------------------------------------------------------------------------------------------------
 						// 	DELETING IP's
-						// 	@since									MultiMediaMonster 1.1
+						// 	@since									MultiMediaMonster
 						// ---------------------------------------------------------------------------------------------------------------------
 							
 							if (isset($_POST['todo']) && $_POST['todo'] == 'delete-authorized')

@@ -5,7 +5,7 @@ if (!class_exists('mmm_copyright'))
 	{
 		// ---------------------------------------------------------------------------------------------------------------------
 		// 	CREATE COPYRIGHT COLUMN
-		// 	@since									MultiMediaMonster 1.1
+		// 	@since									MultiMediaMonster
 		// ---------------------------------------------------------------------------------------------------------------------
 		
 		static function copyright_column ()

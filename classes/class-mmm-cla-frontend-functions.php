@@ -3,7 +3,7 @@ class mmm_cla_frontend_functions
 {
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	GET IP
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	// ---------------------------------------------------------------------------------------------------------------------
 	
 		static function get_ip()
@@ -26,7 +26,7 @@ class mmm_cla_frontend_functions
 	
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	SET AJAX URL
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	// ---------------------------------------------------------------------------------------------------------------------
 		
 		static function add_ajax_url()
@@ -39,7 +39,7 @@ class mmm_cla_frontend_functions
 	
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	PERCENT TO 0.VAL
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	// ---------------------------------------------------------------------------------------------------------------------
 		
 		static function percent2dot($percent) 
@@ -51,7 +51,7 @@ class mmm_cla_frontend_functions
 	
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	CREATE RGB(A)
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	// ---------------------------------------------------------------------------------------------------------------------
 	
 		static function hex2rgba($color, $opacity = false) 
@@ -89,7 +89,7 @@ class mmm_cla_frontend_functions
 	
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	PARSE VALID PIXELS
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	// ---------------------------------------------------------------------------------------------------------------------
 	
 		static function parse_pixels($val = 0, $basic = 0) 
@@ -109,7 +109,7 @@ class mmm_cla_frontend_functions
 	
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	PARSE VALID COLOR (INC TRANSPARENCY
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	// ---------------------------------------------------------------------------------------------------------------------
 
 		static function parse_color($val = '', $transparancy = 100, $basic = 'transparent') 
@@ -121,7 +121,7 @@ class mmm_cla_frontend_functions
 	
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	POSITIONING
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	/*
 		horizontal:
 		1 = left 
@@ -149,7 +149,7 @@ class mmm_cla_frontend_functions
 	
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	PARSE BROWSER
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	// ---------------------------------------------------------------------------------------------------------------------
 	
 		static function parse_browser($val = 0, $to_parse = '') 
@@ -167,7 +167,7 @@ class mmm_cla_frontend_functions
 		
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	PARSE COMPLETE LAYOUT (FINAL)
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	// ---------------------------------------------------------------------------------------------------------------------
 	
 		static function parse_layout($array_layout = array())

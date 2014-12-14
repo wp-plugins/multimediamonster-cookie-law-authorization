@@ -3,7 +3,7 @@ class mmm_cla_settings
 {
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	ADD SETTINGS PAGE TO PLUGIN PAGE
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	// ---------------------------------------------------------------------------------------------------------------------
 		
 		static function add_plugin_settings_link($actions, $file) 
@@ -17,7 +17,7 @@ class mmm_cla_settings
 		
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	PAGE TABS
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	// ---------------------------------------------------------------------------------------------------------------------
 		
 		static function tabs($to_administrate)
@@ -41,7 +41,7 @@ class mmm_cla_settings
 	
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	FORMFIELDS
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	// ---------------------------------------------------------------------------------------------------------------------
 		
 		public static function formfields_tabs($options = '') 
@@ -435,7 +435,7 @@ class mmm_cla_settings
 		
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	DEFAULT VALUES
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	// ---------------------------------------------------------------------------------------------------------------------
 		
 		public static function default_values($to_return = '') 
@@ -523,7 +523,7 @@ class mmm_cla_settings
 		
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	RETURN SETTINGS ARRAY AS A FORM
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	// ---------------------------------------------------------------------------------------------------------------------
 		
 		static function return_form($options = '', $formfields = '') 
@@ -539,7 +539,7 @@ class mmm_cla_settings
 	
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	INPUT TYPES
-	// 	@since									MultiMediaMonster 1.1
+	// 	@since									MultiMediaMonster
 	// ---------------------------------------------------------------------------------------------------------------------
 		
 		static function return_required($required = '') 

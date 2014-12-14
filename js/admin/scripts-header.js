@@ -1,7 +1,7 @@
 	
 	// ---------------------------------------------------------------------------------------------------------------------
 	// 	JAVASCRIPT FUNCTIONS
-	//	@since				MultiMediaMonster 1.1
+	//	@since									MultiMediaMonster
 	/*
 		On loading the website ... what should we do?
 	*/
