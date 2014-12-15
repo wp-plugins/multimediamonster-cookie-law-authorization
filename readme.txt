@@ -43,7 +43,7 @@ Please send them to me and I will fix the problem or add the question here.
 
 == Changelog ==
 
-= 1.2.1 =
+= 1.2.2 =
 * Guess what ...
 
 = 1.2.1 =
