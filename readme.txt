@@ -4,7 +4,7 @@ Donate link: http://www.multimediamonster.nl/
 Tags: cookies, cookie law, cookie levels, 
 Requires at least: 4.0
 Tested up to: 4.0
-Stable tag: 1.2
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,6 +42,9 @@ Please send them to me and I will fix the problem or add the question here.
 5. Admin example
 
 == Changelog ==
+
+= 1.2.1 =
+* And again some simple bugfixing
 
 = 1.2 =
 * Some simple bugfixing
