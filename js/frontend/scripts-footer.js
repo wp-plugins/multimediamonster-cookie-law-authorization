@@ -66,7 +66,7 @@
 			   url: 		window.ajaxurl,
 			   data: 		todo
 		});
-		$('.cookie-tool-container.large').hide();
+		$('#cookie-tool-container-large').hide();
 		$('.cookie-tool-container.small').hide();
 		return false;
 	});
