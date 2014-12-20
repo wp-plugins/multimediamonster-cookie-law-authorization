@@ -43,6 +43,9 @@ Please send them to me and I will fix the problem or add the question here.
 
 == Changelog ==
 
+= 1.2.3 =
+* Update to WP 4.1 (old version works aswell)
+
 = 1.2.2 =
 * Guess what ...
 
