@@ -1,7 +1,9 @@
 === Cookie Law Authorization ===
 Contributors: mmmrenske
-Donate link: http://www.multimediamonster.nl/
-Tags: cookies, cookie law, cookie levels, 
+Author: MultiMediaMonster, Renske van der Heijden
+Author URI: http://www.multimediamonster.nl
+Donate link: http://www.multimediamonster.nl
+Tags: cookies, cookie law, cookie levels
 Requires at least: 4.0
 Tested up to: 4.1
 Stable tag: 1.2.3
